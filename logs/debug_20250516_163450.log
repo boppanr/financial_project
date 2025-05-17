@@ -1,0 +1,11 @@
+2025-05-16 16:34:50,315 - INFO     - [8849] - MainThread - werkzeug - _internal:_log - 224: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-16 16:34:50,315 - INFO     - [8849] - MainThread - werkzeug - _internal:_log - 224: [33mPress CTRL+C to quit[0m
+2025-05-16 16:34:50,321 - INFO     - [8849] - MainThread - werkzeug - _internal:_log - 224:  * Restarting with watchdog (fsevents)
+2025-05-16 16:34:50,789 - WARNING  - [8850] - MainThread - werkzeug - _internal:_log - 224:  * Debugger is active!
+2025-05-16 16:34:50,797 - INFO     - [8850] - MainThread - werkzeug - _internal:_log - 224:  * Debugger PIN: 450-778-194
+2025-05-16 16:35:00,520 - INFO     - [8850] - Thread-6 (process_request_thread) - werkzeug - _internal:_log - 224: 127.0.0.1 - - [16/May/2025 16:35:00] "GET /api/run HTTP/1.1" 200 -
+2025-05-16 16:35:22,673 - INFO     - [8850] - Thread-7 (process_request_thread) - werkzeug - _internal:_log - 224: 127.0.0.1 - - [16/May/2025 16:35:22] "GET /api/run HTTP/1.1" 200 -
+2025-05-16 16:44:22,826 - INFO     - [8850] - Thread-9 (process_request_thread) - werkzeug - _internal:_log - 224: 127.0.0.1 - - [16/May/2025 16:44:22] "GET /api/run HTTP/1.1" 200 -
+2025-05-17 08:36:37,051 - INFO     - [8850] - Thread-11 (process_request_thread) - werkzeug - _internal:_log - 224: 127.0.0.1 - - [17/May/2025 08:36:37] "GET /api/run HTTP/1.1" 200 -
+2025-05-17 08:36:37,101 - INFO     - [8850] - Thread-12 (process_request_thread) - werkzeug - _internal:_log - 224: 127.0.0.1 - - [17/May/2025 08:36:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

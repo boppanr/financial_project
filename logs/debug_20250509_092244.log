@@ -1,0 +1,312 @@
+2025-05-09 09:22:45,129 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): kite.zerodha.com:443
+2025-05-09 09:22:45,239 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://kite.zerodha.com:443 "POST /api/login HTTP/1.1" 200 None
+2025-05-09 09:22:45,298 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://kite.zerodha.com:443 "POST /api/twofa HTTP/1.1" 200 42
+2025-05-09 09:22:45,375 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://kite.zerodha.com:443 "GET /connect/login?v=3&api_key=pyjttc3uafwlge28 HTTP/1.1" 302 0
+2025-05-09 09:22:45,491 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://kite.zerodha.com:443 "GET /connect/finish?api_key=pyjttc3uafwlge28&sess_id=OB9hPkO2T9VZ9D1lq4DdxQL3oEGhlf97 HTTP/1.1" 302 0
+2025-05-09 09:22:45,491 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.kite.trade:443
+2025-05-09 09:22:45,617 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.kite.trade:443 "POST /session/token HTTP/1.1" 200 None
+2025-05-09 09:22:45,623 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:45,723 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/QuickAuth HTTP/1.1" 200 2156
+2025-05-09 09:22:45,723 - INFO     - [4340] - MainThread - oms - oms:shoonya_login - 144: Shoonya loggedin successfully.
+2025-05-09 09:22:45,775 - INFO     - [4340] - Thread-1 (run) - pricefeed - pricefeed:on_connect - 44: Feed connected successfully.
+2025-05-09 09:22:45,791 - INFO     - [4340] - Thread-1 (run) - pricefeed - pricefeed:subscribe - 81: Succesfully subscribed 4000 tokens.
+2025-05-09 09:22:45,791 - INFO     - [4340] - Thread-1 (run) - pricefeed - pricefeed:on_connect - 51: pricefeed connected, <kiteconnect.ticker.KiteTicker object at 0x0000025FC2448860>
+2025-05-09 09:22:45,855 - INFO     - [4340] - MainThread - root - main:main - 236: Next check-time: 09:38:00
+2025-05-09 09:22:47,030 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:47,118 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:22:47,118 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:22:47 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:22:47,118 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:22:47,118 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:47,207 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:22:48,286 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:48,367 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:22:48,367 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:22:48 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:22:48,367 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:22:48,367 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:48,451 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:22:49,534 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:49,602 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:22:49,602 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:22:49 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:22:49,602 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:22:49,602 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:49,682 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:22:50,785 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:50,881 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:22:50,881 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:22:51 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:22:50,885 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:22:50,885 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:50,965 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:22:52,035 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:52,111 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:22:52,111 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:22:52 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:22:52,111 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:22:52,111 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:52,191 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:22:53,286 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:53,379 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:22:53,379 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:22:53 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:22:53,379 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:22:53,381 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:53,468 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:22:54,532 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:54,706 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:22:54,706 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:22:55 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:22:54,706 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:22:54,708 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:54,784 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:22:56,278 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:56,373 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:22:56,373 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:22:56 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:22:56,373 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:22:56,373 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:56,453 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:22:57,775 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:57,849 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:22:57,853 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:22:58 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:22:57,853 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:22:57,853 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:57,936 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:22:59,028 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:59,107 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:22:59,107 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:22:59 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:22:59,107 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:22:59,109 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:22:59,191 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:00,536 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:00,619 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:00,619 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:00 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:00,619 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:00,621 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:00,703 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:01,781 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:01,866 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:01,866 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:02 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:01,866 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:01,868 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:01,950 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:03,026 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:03,112 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:03,117 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:03 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:03,117 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:03,118 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:03,210 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:04,279 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:04,359 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:04,359 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:04 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:04,359 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:04,361 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:04,434 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:05,534 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:05,599 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:05,599 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:05 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:05,599 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:05,599 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:05,695 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:06,772 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:06,864 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:06,864 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:07 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:06,864 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:06,866 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:06,949 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:08,031 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:08,124 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:08,124 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:08 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:08,124 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:08,124 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:08,204 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:09,279 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:09,362 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:09,362 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:09 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:09,362 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:09,364 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:09,436 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:10,783 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:10,942 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:10,942 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:11 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:10,942 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:10,945 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:11,073 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:12,284 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:12,366 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:12,366 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:12 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:12,366 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:12,368 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:12,445 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:13,783 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:13,857 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:13,857 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:14 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:13,857 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:13,859 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:13,941 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:15,029 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:15,143 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:15,145 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:15 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:15,145 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:15,145 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:15,233 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:16,530 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:16,600 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:16,600 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:16 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:16,600 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:16,614 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:17,062 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:18,276 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:18,368 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:18,368 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:18 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:18,368 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:18,371 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:18,463 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:19,524 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:19,628 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:19,628 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:19 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:19,628 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:19,628 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:19,959 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:21,282 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:21,368 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:21,368 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:21 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:21,368 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:21,368 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:21,460 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:22,783 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:22,875 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:22,875 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:23 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:22,875 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:22,875 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:22,954 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:24,035 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:24,116 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:24,116 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:24 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:24,116 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:24,118 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:24,203 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:25,278 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:25,357 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:25,357 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:25 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:25,358 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:25,358 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:25,456 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:26,528 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:26,618 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:26,618 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:26 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:26,618 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:26,620 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:26,718 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:27,782 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:27,880 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:27,880 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:28 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:27,880 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:27,882 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:27,972 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:29,036 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:29,110 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:29,110 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:29 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:29,110 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:29,120 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:29,218 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:30,531 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:30,614 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:30,614 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:30 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:30,614 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:30,616 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:30,705 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:31,780 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:31,875 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:31,875 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:32 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:31,877 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:31,877 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:31,964 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:33,278 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:33,493 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:33,493 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:33 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:33,494 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:33,494 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:33,583 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:34,596 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:34,663 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:34,663 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:34 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:34,663 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:34,663 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:34,742 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:35,775 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:35,865 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:35,872 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:36 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:35,872 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:35,872 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:35,955 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:37,028 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:37,128 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:37,128 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:37 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:37,128 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:37,128 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:37,221 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:38,305 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:38,389 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:38,389 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:38 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:38,389 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:38,391 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:38,472 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:39,783 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:39,911 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:39,915 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:40 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:39,915 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:39,916 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:39,980 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:41,280 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:41,359 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:41,359 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:41 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:41,359 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:41,359 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:41,445 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:42,783 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:42,867 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:42,870 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:43 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:42,870 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:42,870 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:42,951 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:44,026 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:44,124 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:44,124 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:44 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:44,124 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:44,124 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:44,234 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:45,533 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:45,614 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:45,614 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:45 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:45,614 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:45,614 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:45,706 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:46,775 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:46,840 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:46,853 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:47 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:46,853 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:46,854 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:46,957 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:48,032 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:48,122 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:48,122 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:48 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:48,123 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:48,124 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:48,200 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:49,779 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:49,855 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:49,855 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:50 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:49,855 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:49,855 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:49,943 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:51,280 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:51,351 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-09 09:23:51,351 - DEBUG    - [4340] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 397: pending gtt orders {"stat":"Not_Ok","request_time":"09:23:51 09-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-09 09:23:51,351 - DEBUG    - [4340] - MainThread - oms - oms:finvasia_get_orderbook - 332: Payload: jData= {"uid": "FN112899"}&jKey=f8b9d4547058284a38d48487df1e2547b1e0161313113fcf0e0dd5e7d9e71c3a
+2025-05-09 09:23:51,351 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-09 09:23:51,429 - DEBUG    - [4340] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-09 09:23:52,030 - CRITICAL - [4340] - MainThread - root - main:main - 516: Runtime Error
+Traceback (most recent call last):
+  File "D:\38mincandle-client\main.py", line 242, in main
+    tick: PricePkt = pricefeed_queue.get()
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\queue.py", line 171, in get
+    self.not_empty.wait()
+  File "C:\Program Files\Python312\Lib\threading.py", line 334, in wait
+    waiter.acquire()
+KeyboardInterrupt

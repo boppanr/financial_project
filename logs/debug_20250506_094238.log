@@ -1,0 +1,154 @@
+2025-05-06 09:42:39,358 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): kite.zerodha.com:443
+2025-05-06 09:42:39,446 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://kite.zerodha.com:443 "POST /api/login HTTP/1.1" 200 None
+2025-05-06 09:42:39,492 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://kite.zerodha.com:443 "POST /api/twofa HTTP/1.1" 200 42
+2025-05-06 09:42:39,542 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://kite.zerodha.com:443 "GET /connect/login?v=3&api_key=pyjttc3uafwlge28 HTTP/1.1" 302 0
+2025-05-06 09:42:39,604 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://kite.zerodha.com:443 "GET /connect/finish?api_key=pyjttc3uafwlge28&sess_id=jFVaKH7FN9E8W9LYfYOF6pBh75UkC8CI HTTP/1.1" 302 0
+2025-05-06 09:42:39,608 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.kite.trade:443
+2025-05-06 09:42:39,687 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.kite.trade:443 "POST /session/token HTTP/1.1" 200 None
+2025-05-06 09:42:39,694 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:39,785 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/QuickAuth HTTP/1.1" 200 1952
+2025-05-06 09:42:39,791 - INFO     - [15684] - MainThread - oms - oms:shoonya_login - 145: Shoonya loggedin successfully.
+2025-05-06 09:42:39,832 - INFO     - [15684] - Thread-1 (run) - pricefeed - pricefeed:on_connect - 44: Feed connected successfully.
+2025-05-06 09:42:39,843 - INFO     - [15684] - Thread-1 (run) - pricefeed - pricefeed:subscribe - 81: Succesfully subscribed 4000 tokens.
+2025-05-06 09:42:39,843 - INFO     - [15684] - Thread-1 (run) - pricefeed - pricefeed:on_connect - 51: pricefeed connected, <kiteconnect.ticker.KiteTicker object at 0x000002F8DD77F8C0>
+2025-05-06 09:42:39,874 - INFO     - [15684] - MainThread - root - main:main - 236: Next check-time: 10:16:00
+2025-05-06 09:42:41,342 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:41,423 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-06 09:42:41,424 - DEBUG    - [15684] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 399: pending gtt orders {"stat":"Not_Ok","request_time":"09:42:41 06-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-06 09:42:41,425 - DEBUG    - [15684] - MainThread - oms - oms:finvasia_get_orderbook - 333: Payload: jData= {"uid": "FN112899"}&jKey=6367ca51bb417e55adc8c94f547899c6f9130247fce3784cdc7a1c4822a79287
+2025-05-06 09:42:41,426 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:41,502 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-06 09:42:42,846 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:42,915 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-06 09:42:42,915 - DEBUG    - [15684] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 399: pending gtt orders {"stat":"Not_Ok","request_time":"09:42:42 06-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-06 09:42:42,915 - DEBUG    - [15684] - MainThread - oms - oms:finvasia_get_orderbook - 333: Payload: jData= {"uid": "FN112899"}&jKey=6367ca51bb417e55adc8c94f547899c6f9130247fce3784cdc7a1c4822a79287
+2025-05-06 09:42:42,917 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:42,997 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-06 09:42:44,340 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:44,413 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-06 09:42:44,413 - DEBUG    - [15684] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 399: pending gtt orders {"stat":"Not_Ok","request_time":"09:42:44 06-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-06 09:42:44,413 - DEBUG    - [15684] - MainThread - oms - oms:finvasia_get_orderbook - 333: Payload: jData= {"uid": "FN112899"}&jKey=6367ca51bb417e55adc8c94f547899c6f9130247fce3784cdc7a1c4822a79287
+2025-05-06 09:42:44,413 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:44,475 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-06 09:42:45,840 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:45,935 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-06 09:42:45,935 - DEBUG    - [15684] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 399: pending gtt orders {"stat":"Not_Ok","request_time":"09:42:45 06-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-06 09:42:45,936 - DEBUG    - [15684] - MainThread - oms - oms:finvasia_get_orderbook - 333: Payload: jData= {"uid": "FN112899"}&jKey=6367ca51bb417e55adc8c94f547899c6f9130247fce3784cdc7a1c4822a79287
+2025-05-06 09:42:45,936 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:46,019 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-06 09:42:47,341 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:47,416 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-06 09:42:47,416 - DEBUG    - [15684] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 399: pending gtt orders {"stat":"Not_Ok","request_time":"09:42:47 06-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-06 09:42:47,416 - DEBUG    - [15684] - MainThread - oms - oms:finvasia_get_orderbook - 333: Payload: jData= {"uid": "FN112899"}&jKey=6367ca51bb417e55adc8c94f547899c6f9130247fce3784cdc7a1c4822a79287
+2025-05-06 09:42:47,432 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:47,511 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-06 09:42:48,841 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:48,911 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-06 09:42:48,911 - DEBUG    - [15684] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 399: pending gtt orders {"stat":"Not_Ok","request_time":"09:42:48 06-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-06 09:42:48,911 - DEBUG    - [15684] - MainThread - oms - oms:finvasia_get_orderbook - 333: Payload: jData= {"uid": "FN112899"}&jKey=6367ca51bb417e55adc8c94f547899c6f9130247fce3784cdc7a1c4822a79287
+2025-05-06 09:42:48,913 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:48,978 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-06 09:42:50,335 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:50,409 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-06 09:42:50,409 - DEBUG    - [15684] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 399: pending gtt orders {"stat":"Not_Ok","request_time":"09:42:50 06-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-06 09:42:50,409 - DEBUG    - [15684] - MainThread - oms - oms:finvasia_get_orderbook - 333: Payload: jData= {"uid": "FN112899"}&jKey=6367ca51bb417e55adc8c94f547899c6f9130247fce3784cdc7a1c4822a79287
+2025-05-06 09:42:50,409 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:50,482 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-06 09:42:51,841 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:51,953 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-06 09:42:51,953 - DEBUG    - [15684] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 399: pending gtt orders {"stat":"Not_Ok","request_time":"09:42:51 06-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-06 09:42:51,953 - DEBUG    - [15684] - MainThread - oms - oms:finvasia_get_orderbook - 333: Payload: jData= {"uid": "FN112899"}&jKey=6367ca51bb417e55adc8c94f547899c6f9130247fce3784cdc7a1c4822a79287
+2025-05-06 09:42:51,956 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:52,032 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-06 09:42:53,345 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:53,415 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-06 09:42:53,415 - DEBUG    - [15684] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 399: pending gtt orders {"stat":"Not_Ok","request_time":"09:42:53 06-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-06 09:42:53,427 - DEBUG    - [15684] - MainThread - oms - oms:finvasia_get_orderbook - 333: Payload: jData= {"uid": "FN112899"}&jKey=6367ca51bb417e55adc8c94f547899c6f9130247fce3784cdc7a1c4822a79287
+2025-05-06 09:42:53,427 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:53,507 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-06 09:42:54,595 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:54,653 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-06 09:42:54,653 - DEBUG    - [15684] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 399: pending gtt orders {"stat":"Not_Ok","request_time":"09:42:54 06-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-06 09:42:54,653 - DEBUG    - [15684] - MainThread - oms - oms:finvasia_get_orderbook - 333: Payload: jData= {"uid": "FN112899"}&jKey=6367ca51bb417e55adc8c94f547899c6f9130247fce3784cdc7a1c4822a79287
+2025-05-06 09:42:54,653 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:54,733 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 94
+2025-05-06 09:42:55,840 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:42:55,940 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/GetPendingGTTOrder HTTP/1.1" 200 94
+2025-05-06 09:42:55,940 - DEBUG    - [15684] - MainThread - oms - oms:finvesia_get_pending_gtt_orders - 399: pending gtt orders {"stat":"Not_Ok","request_time":"09:42:55 06-05-2025","emsg":"Error Occurred : 5 \"no data\""}
+2025-05-06 09:42:55,940 - DEBUG    - [15684] - MainThread - oms - oms:finvasia_get_orderbook - 333: Payload: jData= {"uid": "FN112899"}&jKey=6367ca51bb417e55adc8c94f547899c6f9130247fce3784cdc7a1c4822a79287
+2025-05-06 09:42:55,940 - DEBUG    - [15684] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443
+2025-05-06 09:43:05,987 - CRITICAL - [15684] - MainThread - root - main:main - 506: Runtime Error
+Traceback (most recent call last):
+  File "D:\38mincandle-client\env\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "D:\38mincandle-client\env\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "D:\38mincandle-client\env\Lib\site-packages\urllib3\connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\38mincandle-client\env\Lib\site-packages\urllib3\connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\38mincandle-client\env\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\38mincandle-client\env\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\ssl.py", line 1046, in _create
+    self.do_handshake()
+  File "C:\Program Files\Python312\Lib\ssl.py", line 1317, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: _ssl.c:983: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\38mincandle-client\env\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\38mincandle-client\env\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\38mincandle-client\env\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\38mincandle-client\env\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "D:\38mincandle-client\env\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\38mincandle-client\env\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "D:\38mincandle-client\env\Lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "D:\38mincandle-client\env\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.shoonya.com', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\38mincandle-client\main.py", line 496, in main
+    finvasia_get_orderbook()
+  File "D:\38mincandle-client\oms.py", line 334, in finvasia_get_orderbook
+    response = requests.post(
+               ^^^^^^^^^^^^^^
+  File "D:\38mincandle-client\env\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\38mincandle-client\env\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\38mincandle-client\env\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\38mincandle-client\env\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\38mincandle-client\env\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.shoonya.com', port=443): Read timed out. (read timeout=10)

@@ -97,7 +97,6 @@ dict_config = {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'formatter': 'verbose',
-            'filename': log_file_path,
         },
         'null_handler': {
             'level': 'DEBUG',

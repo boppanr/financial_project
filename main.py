@@ -1,4 +1,10 @@
+import watchtower
 import os
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+logger.addHandler(watchtower.CloudWatchLogHandler(log_group="financial_project_logs"))
+
 from queue import Queue
 import logging
 import logging.config
@@ -234,7 +240,7 @@ def main():
             Config.API.creds["totp_secret"],
         )
     timeframe_stamps = get_time_frame_stamps(interval=Config.STRATEGY.check_candle)
-    logger.info(f"========= Next check-time: {timeframe_stamps[0].strftime('%H:%M:%S')} =========")
+    logger.info(f"========= Next check-time: {timeframe_stamps[0].strftime("%H:%M:%S")} =========")
     strategy = Config.STRATEGY
     strategy.status = StrategyStatus.RUNNING
     last_sync_time = time.time()
@@ -418,7 +424,7 @@ def main():
                             put_positon.net_buy_quantity += put_order.qty
                             strategy.running_positions.append(put_positon)
                             logger.info(f"Trigger order placed for: {put_positon.trading_symbol}, Side:{call_order.side.name}, Qty: {put_order.qty}")
-                    logger.info(f"========= Next check-time: {timeframe_stamps[0].strftime('%H:%M:%S')} =========")
+                    logger.info(f"========= Next check-time: {timeframe_stamps[0].strftime("%H:%M:%S")} =========")
                 positions_to_archive = []
                 for position in strategy.running_positions:
                     ltp = get_ltp(position.instrument_id)

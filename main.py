@@ -1,10 +1,5 @@
 import watchtower
 import os
-
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
-logger.addHandler(watchtower.CloudWatchLogHandler(log_group="financial_project_logs"))
-
 from queue import Queue
 import logging
 import logging.config
@@ -28,14 +23,9 @@ from pricefeed import PricePkt, Pricefeed, get_high_low_historical_data, get_ltp
 from utils import get_alloted_fund, get_time_frame_stamps
 from copy import deepcopy
 
-
-# Ensure the log directory exists
-LOG_DIR = "./logs"
-if not os.path.exists(LOG_DIR):
-    os.makedirs(LOG_DIR)
-
-# Define log file path
-log_file_path = os.path.join(LOG_DIR, f"debug_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.log")
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+logger.addHandler(watchtower.CloudWatchLogHandler(log_group="financial_project_logs"))
 
 
 class MyFilter(logging.Filter):

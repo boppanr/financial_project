@@ -127,9 +127,14 @@ def sq_off_all(strategy: Strategy):
 
     strategy.status = StrategyStatus.SQUARING_OFF
 
-
-def main():
-    logger.debug(Config.config_json)
+def main(config_data):
+    from config import Config
+    Config.config_json = config_data
+    load_instruments()
+    print("=== MAIN FUNCTION STARTED ===")
+    print("Received config:")
+    print(config_data)
+    print("=== MAIN FUNCTION ENDED ===")
     zerodha_login(
         Config.PRICEFEED_CREDS["user_id"],
         Config.PRICEFEED_CREDS["password"],

@@ -8,13 +8,14 @@ import threading
 from main import main
 
 app = Flask(__name__)
+CORS(app)
 TABLE_NAME = "ConfigTable"
 
 def run_main_async(config_data):
     thread = threading.Thread(target=main, args=(config_data,))
     thread.start()
 
-CORS(@app.route('/api/upload_config', methods=['POST']))
+@app.route('/api/upload_config', methods=['POST'])
 def upload_config():
     try:
         config_data = request.get_json()
@@ -37,7 +38,7 @@ def upload_config():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-CORS(@app.route('/api/get_config/<config_id>', methods=['GET']))
+@app.route('/api/get_config/<config_id>', methods=['GET'])
 def get_config(config_id):
     try:
         table = get_dynamo_table(TABLE_NAME)

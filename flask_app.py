@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import uuid
 from dynamo_connection import get_dynamo_table, insert_config_data
 import boto3
@@ -13,7 +14,7 @@ def run_main_async(config_data):
     thread = threading.Thread(target=main, args=(config_data,))
     thread.start()
 
-@app.route('/api/upload_config', methods=['POST'])
+CORS(@app.route('/api/upload_config', methods=['POST']))
 def upload_config():
     try:
         config_data = request.get_json()
@@ -36,7 +37,7 @@ def upload_config():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-@app.route('/api/get_config/<config_id>', methods=['GET'])
+CORS(@app.route('/api/get_config/<config_id>', methods=['GET']))
 def get_config(config_id):
     try:
         table = get_dynamo_table(TABLE_NAME)

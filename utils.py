@@ -2,7 +2,7 @@ from datetime import time, timedelta, datetime
 
 import pytz
 
-from config import Config
+from config import Strategy
 from constants import INDEXS
 
 def get_time_frame_stamps(interval: int) -> list[time]:
@@ -21,5 +21,5 @@ def get_time_frame_stamps(interval: int) -> list[time]:
     return timestamps
 
 
-def get_alloted_fund(underlying: str):
-    return Config.STRATEGY.fund_allocations[INDEXS[underlying].lower()]
+def get_alloted_fund(underlying: str, strategy: Strategy):
+    return strategy.fund_allocations[INDEXS[underlying].lower()]

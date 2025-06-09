@@ -1,4 +1,5 @@
 from datetime import datetime, time
+from time import time as tt
 import os
 import json
 import logging
@@ -16,7 +17,7 @@ class Api:
 
 
 class Strategy:
-    def __init__(self, strategy_json: dict):
+    def __init__(self, strategy_json: dict, api: Api):
         self.check_candle = strategy_json["check_candle"]
         self.fund_allocations = strategy_json["fund_allocations"]
         self.stop_loss = strategy_json["stop_loss"]
@@ -26,11 +27,14 @@ class Strategy:
         self.strike_buffer_precentage = strategy_json["strike_buffer_precentage"]
         end_time_parts = strategy_json["strategy_end_time"].split(":")
         self.strategy_end_time = time(int(end_time_parts[0]), int(end_time_parts[1]), int(end_time_parts[2]))
-
+        self.api = api
         self.running_positions: List[Position] = []
         self.archived_positons: List[Position] = []
+        self.timeframe_stamps: List[datetime] = None
+        self.broker_user_id = None
 
         self.status = StrategyStatus.CREATED
+        self.last_sync_time = tt()
 
 
 class Config:
@@ -40,8 +44,11 @@ class Config:
             exit()
         config_json = json.load(open("config.json"))
         PRICEFEED_CREDS = config_json["pricefeed_creds"]
-        API = Api(config_json["api"])
-        STRATEGY = Strategy(config_json["strategy"])
+        STRATEGY_LIST: List[Strategy] = []
+        for api_config in config_json["api"]:
+            api = Api(api_config)
+            config_json["strategy"]["fund_allocations"] = api_config["fund_allocations"]
+            STRATEGY_LIST.append(Strategy(config_json["strategy"], api))
         PRICEFEED_ACCESS_TOKEN = ""
     else:
         BROKER = os.environ.get("BROKER")

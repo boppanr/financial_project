@@ -9,6 +9,7 @@ from config import Config
 from instruments import instruments
 
 ltps = {}
+historical_data = {}
 
 logger = logging.getLogger(__name__)
 
@@ -87,6 +88,9 @@ class Pricefeed:
 
 
 def get_high_low_historical_data(instrument_token: str, timeframe: float, end_time: datetime.time):
+    if instrument_token in historical_data:
+        if timeframe in historical_data[instrument_token]:
+            return historical_data[instrument_token][timeframe]["high"], historical_data[instrument_token][timeframe]["low"]
     url = f"https://api.kite.trade/instruments/historical/{instrument_token}/minute"
     today = datetime.datetime.today().date()
     end_datetime = datetime.datetime.combine(today, end_time)
@@ -96,7 +100,7 @@ def get_high_low_historical_data(instrument_token: str, timeframe: float, end_ti
         "to": end_datetime
     }
     headers = {
-        "Authorization" : f"token {Config.PRICEFEED_CREDS['api_key']}:{Config.PRICEFEED_ACCESS_TOKEN}"
+        "Authorization" : f"token {Config.PRICEFEED_CREDS["api_key"]}:{Config.PRICEFEED_ACCESS_TOKEN}"
     }
     for count in range(3):
         resp = requests.get(url=url, params=params, headers=headers)
@@ -114,6 +118,12 @@ def get_high_low_historical_data(instrument_token: str, timeframe: float, end_ti
             return None, None
         high = max(row[2] for row in flat_data)
         low = min(row[3] for row in flat_data)
+        if not instrument_token in historical_data:
+            historical_data[instrument_token] = {}
+        historical_data[instrument_token][timeframe] = {
+            "high": high,
+            "low": low
+        }
         return high, low
     
     raise Exception(f"Max retry attempts achieved for historical data.")

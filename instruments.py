@@ -8,6 +8,8 @@ from constants import AVAILABLE_BROKERS, INDICES, LOT_SIZE
 
 expiry_map = {ExpiryType.WEEKLY.name: {}, ExpiryType.MONTHLY.name: {}}
 instruments_map = {broker: {} for broker in AVAILABLE_BROKERS}
+fyers_instruments_map = {}
+groww_instruments_map = {}
 
 BASE_URL = "https://api.kite.trade"
 
@@ -188,9 +190,12 @@ def load_instruments_from_kite():
         all_instruments.update(instruments)
     return all_instruments
 
+
 def load_instruments():
     parsed_master_data = load_instruments_from_kite()
     map_instruments(parsed_master_data)
+    load_fyers_instruments()
+    load_groww_instruments()
 
 
 def map_instruments(parsed_master_data: Dict[str, Instrument]):
@@ -209,19 +214,19 @@ def map_instruments(parsed_master_data: Dict[str, Instrument]):
                 exchange = {"NSE": "NSE", "BSE": "BSE", "NFO": "NSE", "BFO": "BSE"}[
                     instrument_dict["exchange"]
                 ]
-                instrument_id = f"{exchange}:{instrument_dict['trading_symbol']}"
+                instrument_id = f"{exchange}:{instrument_dict["trading_symbol"]}"
                 instruments_map[broker][instrument_dict["pricefeed_token"]] = (
                     Instrument(
                         exchange, instrument_id, instrument_dict["instrument_type"], instrument_dict["trading_symbol"]
                     )
                 )
-            elif broker == ApiProvider.GROW.name:
+            elif broker == ApiProvider.GROWW.name:
                 exchange = {"NSE": "NSE", "BSE": "BSE", "NFO": "NSE", "BFO": "BSE"}[
                     instrument_dict["exchange"]
                 ]
                 expiry_str = instrument_dict["expiry_date"]
                 formatted_expiry = expiry_str[:2] + expiry_str[2:4] + expiry_str[4:]
-                trading_symbol = f"{instrument_dict['underlying']}{formatted_expiry}{strike_part}{instrument_dict['option_type']}"
+                trading_symbol = f"{instrument_dict["underlying"]}{formatted_expiry}{strike_part}{instrument_dict["option_type"]}"
                 segment = {
                     "NFO-OPT": "FNO",
                     "BFO-OPT": "FNO",
@@ -251,7 +256,7 @@ def map_instruments(parsed_master_data: Dict[str, Instrument]):
                     if instrument_dict["strike_price"] > 0
                     else ""
                 )
-                trading_symbol = f"{instrument_dict['underlying']}{formatted_expiry}{contract_type}{strike_part}"
+                trading_symbol = f"{instrument_dict["underlying"]}{formatted_expiry}{contract_type}{strike_part}"
                 instruments_map[broker][instrument_dict["pricefeed_token"]] = (
                     Instrument(
                         exchange,
@@ -274,5 +279,48 @@ def get_exchnage_token(instrument_token: str) -> str:
     return str(instruments[instrument_token]["token"])
 
 
+def get_zerodha_tradingsymbol(instrument_token: str) -> str:
+    return str(instruments[instrument_token]["trading_symbol"])
+
+
 def get_expiry(underlying: str, type: str):
     return expiry_map[type][underlying]
+
+
+def load_fyers_instruments():
+    ##NSE
+    url1 = "https://public.fyers.in/sym_details/NSE_FO_sym_master.json"
+    response1 = requests.get(url1, timeout=20)
+    response1.raise_for_status()
+    data1 = response1.json()
+    for trading_symbol1, instrument_info1 in data1.items():
+        fyers_instruments_map[str(instrument_info1["exToken"])] = trading_symbol1
+    ##BSE
+    url2 = "https://public.fyers.in/sym_details/BSE_FO_sym_master.json"
+    response2 = requests.get(url2, timeout=20)
+    response2.raise_for_status()
+    data2 = response2.json()
+    for trading_symbol2, instrument_info2 in data2.items():
+        fyers_instruments_map[str(instrument_info2["exToken"])] = trading_symbol2
+
+
+def get_fyers_tradingsymbol(instrument_token: str) -> str:
+    exchange_token = get_exchnage_token(instrument_token)
+    return fyers_instruments_map[exchange_token]
+
+
+def load_groww_instruments():
+    url = "https://growwapi-assets.groww.in/instruments/instrument.csv"
+    resp = requests.get(url=url)
+    raw_data = resp.text.split("\n")
+    raw_data.pop(0)
+    for data in raw_data:
+        instrument_data = data.split(",")
+        if instrument_data == ['']:
+            continue
+        groww_instruments_map[instrument_data[1]] = instrument_data[2]
+
+
+def get_groww_tradingsymbol(instrument_token: str) -> str:
+    exchange_token = get_exchnage_token(instrument_token)
+    return groww_instruments_map[exchange_token]

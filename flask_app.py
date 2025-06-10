@@ -9,6 +9,10 @@ from main import main
 from datetime import datetime
 #from main import get_broker_pnl
 from flask import jsonify
+from boto3.dynamodb.conditions import Attr
+import json
+from botocore.exceptions import ClientError
+from boto3.dynamodb.types import TypeDeserializer
 
 app = Flask(__name__)
 CORS(app)
@@ -38,30 +42,6 @@ def submit_json_to_db():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-@app.route('/api/upload_config', methods=['POST'])
-def upload_config():
-    try:
-        config_data = request.get_json()
-
-        if not config_data:
-            return jsonify({"error": "Invalid or empty JSON"}), 400
-
-        config_data['config_id'] = str(uuid.uuid4())
-        config_data['creation_time'] = datetime.utcnow().isoformat()
-
-        table = get_dynamo_table(TABLE_NAME)
-        insert_config_data(table, config_data)
-
-        run_main_async(config_data)
-
-        return jsonify({
-            "message": "Configuration inserted and main() triggered asynchronously",
-            "config_id": config_data['config_id']
-        }), 200
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-    
 @app.route('/api/get_config_by_details', methods=['GET'])
 def get_config_by_details():
     customer_name = request.args.get('customer_name')
@@ -73,28 +53,50 @@ def get_config_by_details():
 
     try:
         table = get_dynamo_table(TABLE_NAME)
+
+        # Scan only records where is_deleted is not true (either missing or False)
         response = table.scan(
             FilterExpression=(
-                "customer_name = :customer_name AND provider = :provider AND userid = :userid "
-                "AND (attribute_not_exists(is_deleted) OR is_deleted = :false)"
-            ),
-            ExpressionAttributeValues={
-                ":customer_name": customer_name,
-                ":provider": provider,
-                ":userid": userid,
-                ":false": False
-            }
+                Attr('is_deleted').not_exists() | Attr('is_deleted').eq(False)
+            )
         )
 
         items = response.get('Items', [])
-        
-        if not items:
+
+        matching_records = []
+
+        for item in items:
+            api_list = item.get('api', [])
+            # Guard: ensure api_list is a list
+            if not isinstance(api_list, list):
+                continue
+
+            for api_entry in api_list:
+                if not isinstance(api_entry, dict):
+                    # skip malformed entries
+                    continue
+
+                api_customer_name = api_entry.get('customer_name')
+                api_provider = api_entry.get('provider')
+                api_creds = api_entry.get('creds', {})
+                if not isinstance(api_creds, dict):
+                    api_creds = {}
+
+                api_userid = api_creds.get('userid') or api_creds.get('user_id')
+
+                if (api_customer_name == customer_name and
+                    api_provider == provider and
+                    api_userid == userid):
+                    matching_records.append(api_entry)
+
+        if not matching_records:
             return jsonify({"error": "No matching active records found"}), 404
 
-        return jsonify(items), 200
+        return jsonify(matching_records), 200
 
     except ClientError as e:
         return jsonify({"error": e.response['Error']['Message']}), 500
+
 
 @app.route('/api/update_config', methods=['PUT'])
 def update_config_by_details():

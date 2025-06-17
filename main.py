@@ -12,14 +12,14 @@ from enums import ApiProvider, OrderStatus, OrderType, Side, StrategyStatus
 from config import Config, Strategy
 from instruments import generate_trading_symbol, get_expiry, get_instruent_token_from_name, load_instruments, underlying_instruments
 from oms import (
-    fyres_login,
-    groww_login,
+    fyers_login,
+    #groww_login,
     place_order,
     get_broker_orderbook,
     sync_position, 
     zerodha_login, 
-    shoonya_login,
-    zerodha_pricefeed_login
+    shoonya_login
+    #zerodha_pricefeed_login
 )
 from models import Order, Position
 from pricefeed import PricePkt, Pricefeed, get_high_low_historical_data, get_ltp

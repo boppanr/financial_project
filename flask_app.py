@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORSv
+from flask_cors import CORS
 import uuid
 from dynamo_connection import convert_floats, get_dynamo_table, insert_config_data
 import boto3
@@ -8,7 +8,6 @@ import threading
 from main import main
 from datetime import datetime
 from oms import get_broker_pnl
-from flask import jsonify
 from boto3.dynamodb.conditions import Attr, Key
 import json
 from botocore.exceptions import ClientError

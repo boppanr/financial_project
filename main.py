@@ -132,13 +132,21 @@ def sq_off_all(strategy: Strategy):
     strategy.status = StrategyStatus.SQUARING_OFF
 
 
-def main(config_data):
-    Config.config_json = config_data
+def main(config_data=None):
+    # Use the config_data passed from the service, or load from local if not provided
+    if config_data:
+        Config.config_json = config_data
+        print("=== MAIN FUNCTION STARTED ===")
+        print("Received config from service:")
+        print(config_data)
+        print("=== CONFIG LOADED FROM SERVICE ===")
+    else:
+        # Fallback to local config loading if no config_data is passed
+        print("=== MAIN FUNCTION STARTED ===")
+        print("No config data passed, using local configuration")
+        print("=== USING LOCAL CONFIG ===")
+    
     load_instruments()
-    print("=== MAIN FUNCTION STARTED ===")
-    print("Received config:")
-    print(config_data)
-    print("=== MAIN FUNCTION ENDED ===")
 
     zerodha_pricefeed_login(
         Config.PRICEFEED_CREDS["user_id"],
@@ -465,6 +473,63 @@ def main(config_data):
             for strategy in Config.STRATEGY_LIST:
                 sq_off_all(strategy)
             return
+
+def create_user(username, password, role):
+    if get_user(username):
+        return False, 'User already exists.'
+
+    try:
+        table.put_item(
+            Item={
+                'username': username,
+                'password': hash_password(password),
+                'role': role
+            }
+        )
+        return True, 'User created successfully.'
+    except ClientError as e:
+        return False, str(e)
+
+
+def create_user(username, password, role):
+    if get_user(username):
+        return False, 'User already exists.'
+
+    try:
+        table.put_item(
+            Item={
+                'username': username,
+                'password': hash_password(password),
+                'role': role
+            }
+        )
+        return True, 'User created successfully.'
+    except ClientError as e:
+        return False, str(e)
+
+import boto3
+from botocore.exceptions import ClientError
+import hashlib
+
+dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
+table = dynamodb.Table('users')
+
+def hash_password(password):
+    return hashlib.sha256(password.encode()).hexdigest()
+
+def get_user(username):
+    try:
+        response = table.get_item(Key={'username': username})
+        return response.get('Item')
+    except ClientError as e:
+        print(e.response['Error']['Message'])
+        return None
+
+def verify_user(username, password):
+    user = get_user(username)
+    if not user:
+        return False, None
+    return user['password'] == hash_password(password), user['role']
 
 
 if __name__ == "__main__":

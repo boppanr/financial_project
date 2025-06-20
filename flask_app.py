@@ -18,7 +18,7 @@ import random
 app = Flask(__name__)
 CORS(app)
 TABLE_NAME = "ConfigTable"
-USERS_TABLE_NAME = "UsersTable"
+USERS_TABLE_NAME = "Users"
 
 # User Management Functions
 def hash_password(password):
@@ -282,6 +282,7 @@ def create_user():
         
         # Create user record
         user_data = {
+            'userid': str(uuid.uuid4()),
             'user_id': data['user_id'],
             'name': data['name'],
             'provider': data['provider'],

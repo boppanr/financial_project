@@ -378,8 +378,11 @@ def update_user(user_id):
         table = get_dynamo_table(USERS_TABLE_NAME)
         
         # Check if user exists
-        response = table.get_item(Key={'user_id': user_id})
-        if 'Item' not in response or response['Item'].get('is_deleted', False):
+        #response = table.get_item(Key={'userid': user_id})
+        response = table.query(
+             KeyConditionExpression=Key('userid').eq(user_id)
+            )
+        if 'Items' not in response or response['Items'][0].get('is_deleted') == (True):
             return jsonify({
                 'success': False,
                 'error': 'User not found'
@@ -432,7 +435,7 @@ def update_user(user_id):
         
         # Perform update
         table.update_item(
-            Key={'user_id': user_id},
+            Key={'userid': user_id},
             UpdateExpression=update_expression,
             ExpressionAttributeValues=expression_attribute_values,
             ExpressionAttributeNames=expression_attribute_names
@@ -462,8 +465,8 @@ def delete_user(user_id):
         table = get_dynamo_table(USERS_TABLE_NAME)
         
         # Check if user exists
-        response = table.get_item(Key={'user_id': user_id})
-        if 'Item' not in response or response['Item'].get('is_deleted', False):
+        response = table.get_item(Key={'userid': user_id})
+        if 'Item' not in response or response['Item'].get('is_deleted', True):
             return jsonify({
                 'success': False,
                 'error': 'User not found'
@@ -471,7 +474,7 @@ def delete_user(user_id):
         
         # Soft delete the user
         table.update_item(
-            Key={'user_id': user_id},
+            Key={'userid': user_id},
             UpdateExpression="SET is_deleted = :true, updated_at = :updated_at",
             ExpressionAttributeValues={
                 ":true": True,

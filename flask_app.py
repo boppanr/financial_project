@@ -222,9 +222,9 @@ def get_all_users():
                 'name': user.get('name'),
                 'provider': user.get('provider'),
                 'user_id': user.get('user_id'),
-                'password': '••••••••',  # Masked password
+                'password': user.get('password'),  # Masked password
                 'api_key': user.get('api_key', ''),
-                'api_secret': '••••••••' if user.get('api_secret') else '',  # Masked secret
+                'api_secret': user.get('api_secret'),  # Masked secret
                 'created_at': user.get('created_at'),
                 'updated_at': user.get('updated_at')
             }
@@ -772,8 +772,9 @@ def get_config_by_details():
     customer_name = request.args.get('customer_name')
     provider = request.args.get('provider')
     userid = request.args.get('userid')
+    executionDay = request.args.get('execution_day')
 
-    if not all([customer_name, provider, userid]):
+    if not all([customer_name, provider, userid, executionDay]):
         return jsonify({"error": "Missing required query parameters"}), 400
 
     try:
@@ -782,7 +783,8 @@ def get_config_by_details():
         # Scan only records where is_deleted is not true (either missing or False)
         response = table.scan(
             FilterExpression=(
-                Attr('is_deleted').not_exists() | Attr('is_deleted').eq(False)
+                (Attr('is_deleted').not_exists() | Attr('is_deleted').eq(False)) &
+                (Attr('schedule.execution_days').exists() & Attr('schedule.execution_days').eq(executionDay))
             )
         )
 
@@ -946,6 +948,7 @@ def soft_delete_config():
     provider = data.get('provider')
     userid = data.get('userid')
 
+    print(data)
     if not all([customer_name, provider, userid]):
         return jsonify({"error": "Missing required parameters"}), 400
 
@@ -975,13 +978,15 @@ def exit_all_positions_and_orders():
     try:
         table = get_dynamo_table(TABLE_NAME)
 
+        today = datetime.today().strftime('%d/%m/%Y')
         # Fetch all active user-provider configurations
         response = table.scan(
             FilterExpression=(
-                Attr('is_deleted').not_exists() | Attr('is_deleted').eq(False)
+                (Attr('is_deleted').not_exists() | Attr('is_deleted').eq(False)) &
+                (Attr('schedule.execution_days').exists() & Attr('schedule.execution_days').eq(today))
             )
         )
-
+        
         users = response.get('Items', [])
 
         if not users:
@@ -1035,10 +1040,12 @@ def restart_all_users():
     try:
         table = get_dynamo_table(TABLE_NAME)
 
-        # Fetch all active configurations
+        today = datetime.today().strftime('%d/%m/%Y')
+        # Fetch all active user-provider configurations
         response = table.scan(
             FilterExpression=(
-                Attr('is_deleted').not_exists() | Attr('is_deleted').eq(False)
+                (Attr('is_deleted').not_exists() | Attr('is_deleted').eq(False)) &
+                (Attr('schedule.execution_days').exists() & Attr('schedule.execution_days').eq(today))
             )
         )
 
@@ -1372,4 +1379,4 @@ def get_all_execution_days():
         }), 500
     
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5001, debug=True)

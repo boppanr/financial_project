@@ -819,8 +819,8 @@ def get_config_by_details():
                     complete_record = {
                         'config_id': item.get('config_id'),
                         'creation_time': item.get('creation_time'),
-                        'api_details': api_entry,
-                        'strategy_details': item.get('strategy', {}),
+                        'api': api_list,
+                        'strategy': item.get('strategy', {}),
                         'instruments': item.get('instruments', []),
                         'risk_management': item.get('risk_management', {}),
                         'execution_settings': item.get('execution_settings', {}),

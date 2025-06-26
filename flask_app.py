@@ -36,7 +36,7 @@ def validate_user_data(data, is_update=False):
             return False, f"Missing required field: {field}"
     
     # Validate provider
-    valid_providers = ['Zerodha', 'Shoonya', 'Fyers', 'Groww', 'Dummy']
+    valid_providers = ['Zerodha', 'Shoonya', 'Fyers', 'Groww', 'Dummy', 'Gopocket']
     if data['provider'] not in valid_providers:
         return False, f"Invalid provider. Must be one of: {', '.join(valid_providers)}"
     
@@ -223,6 +223,9 @@ def get_all_users():
                 'provider': user.get('provider'),
                 'user_id': user.get('user_id'),
                 'password': user.get('password'),  # Masked password
+                'phone': user.get('phone'),
+                'appCode': user.get('appCode'),
+                'totp_secret': user.get('totp_secret'),
                 'api_key': user.get('api_key', ''),
                 'api_secret': user.get('api_secret'),  # Masked secret
                 'created_at': user.get('created_at'),
@@ -282,11 +285,14 @@ def create_user():
         
         # Create user record
         user_data = {
-            'userid': str(uuid.uuid4()),
+            'userid': data['user_id'],
             'user_id': data['user_id'],
             'name': data['name'],
             'provider': data['provider'],
-            'password': hash_password(data['password']),
+            'password': data['password'],
+            'phone': data['phone'],
+            'appCode': data['appCode'],
+            'totp_secret': data['totp_secret'],
             'api_key': data.get('api_key', ''),
             'api_secret': data.get('api_secret', ''),
             'created_at': datetime.utcnow().isoformat(),
@@ -402,7 +408,7 @@ def update_user(user_id):
         expression_attribute_names = {}
         
         # Update allowed fields
-        updatable_fields = ['name', 'provider', 'api_key', 'api_secret']
+        updatable_fields = ['name', 'provider', 'api_key', 'api_secret', 'phone', 'totp_secret', 'appCode']
         
         for field in updatable_fields:
             if field in data:
@@ -417,7 +423,7 @@ def update_user(user_id):
             attr_name = "#password"
             value_name = ":password"
             update_expression_parts.append(f"{attr_name} = {value_name}")
-            expression_attribute_values[value_name] = hash_password(data['password'])
+            expression_attribute_values[value_name] = data['password']
             expression_attribute_names[attr_name] = 'password'
         
         # Always update the updated_at timestamp
@@ -1379,4 +1385,4 @@ def get_all_execution_days():
         }), 500
     
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5001, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)

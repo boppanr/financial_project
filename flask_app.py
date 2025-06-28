@@ -7,7 +7,7 @@ from botocore.exceptions import ClientError
 import threading
 from main import main
 from datetime import datetime
-#from oms import get_broker_pnl
+from oms import get_broker_pnl
 from boto3.dynamodb.conditions import Attr, Key
 import json
 from botocore.exceptions import ClientError

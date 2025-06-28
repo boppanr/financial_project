@@ -7,7 +7,7 @@ from botocore.exceptions import ClientError
 import threading
 from main import main
 from datetime import datetime
-from oms import get_broker_pnl
+#from oms import get_broker_pnl
 from boto3.dynamodb.conditions import Attr, Key
 import json
 from botocore.exceptions import ClientError
@@ -1099,7 +1099,7 @@ def restart_all_users():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
     
-@app.route('/api/get_pnl', methods=['GET'])
+""" @app.route('/api/get_pnl', methods=['GET'])
 def get_pnl():
     try:
         pnl_data = get_broker_pnl()
@@ -1108,7 +1108,7 @@ def get_pnl():
             "pnl_data": pnl_data
         }), 200
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        return jsonify({"error": str(e)}), 500 """
 
 @app.route('/api/restart_user', methods=['POST'])
 def restart_single_user():

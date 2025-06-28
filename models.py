@@ -56,6 +56,7 @@ class Position:
         instrument_id: str, 
         trading_symbol: str, 
         underlying_token: str,
+        trigger_price: float,
         take_profit: float, 
         stop_loss: float, 
         trailings: list,
@@ -66,6 +67,7 @@ class Position:
         self.instrument_id = instrument_id
         self.trading_symbol = trading_symbol
         self.underlying_token = underlying_token
+        self.trigger_price = trigger_price
         self.take_profit = take_profit
         self.stop_loss = stop_loss
         self.trailings = trailings 

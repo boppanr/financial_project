@@ -10,6 +10,7 @@ expiry_map = {ExpiryType.WEEKLY.name: {}, ExpiryType.MONTHLY.name: {}}
 instruments_map = {broker: {} for broker in AVAILABLE_BROKERS}
 fyers_instruments_map = {}
 groww_instruments_map = {}
+gopocket_instruments_map = {}
 
 BASE_URL = "https://api.kite.trade"
 
@@ -196,6 +197,7 @@ def load_instruments():
     map_instruments(parsed_master_data)
     load_fyers_instruments()
     load_groww_instruments()
+    load_gopocket_instruments()
 
 
 def map_instruments(parsed_master_data: Dict[str, Instrument]):
@@ -324,3 +326,19 @@ def load_groww_instruments():
 def get_groww_tradingsymbol(instrument_token: str) -> str:
     exchange_token = get_exchnage_token(instrument_token)
     return groww_instruments_map[exchange_token]
+
+
+def load_gopocket_instruments():
+    nfo_url = "https://web.gopocket.in/contract/csv/nfo"
+    bfo_url = "https://web.gopocket.in/contract/csv/bfo"
+    nfo_df = pd.read_csv(nfo_url)
+    bfo_df = pd.read_csv(bfo_url)
+    main_df = pd.concat([nfo_df, bfo_df])
+    main_df = main_df.dropna(subset=["Token"])
+    for _, data in main_df.iterrows():
+        gopocket_instruments_map[str(int(data["Token"]))] = data["Trading Symbol"]
+
+
+def get_gopocket_tradingsymbol(instrument_token: str) -> str:
+    exchange_token = get_exchnage_token(instrument_token)
+    return gopocket_instruments_map[exchange_token]

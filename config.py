@@ -38,18 +38,14 @@ class Strategy:
 
 
 class Config:
-    if not os.environ.get("LINUX"):
-        if not os.path.exists("config.json"):
-            logger.error("config.json dosn't exist")
-            exit()
-        config_json = json.load(open("config.json"))
-        PRICEFEED_CREDS = config_json["pricefeed_creds"]
-        STRATEGY_LIST: List[Strategy] = []
-        for api_config in config_json["api"]:
-            api = Api(api_config)
-            config_json["strategy"]["fund_allocations"] = api_config["fund_allocations"]
-            STRATEGY_LIST.append(Strategy(config_json["strategy"], api))
-        PRICEFEED_ACCESS_TOKEN = ""
-    else:
-        BROKER = os.environ.get("BROKER")
-        BROKER_CREDS = json.loads(os.environ.get("BROKER_CREDS"))
+    if not os.path.exists("config.json"):
+        logger.error("config.json dosn't exist")
+        exit()
+    config_json = json.load(open("config.json"))
+    PRICEFEED_CREDS = config_json["pricefeed_creds"]
+    STRATEGY_LIST: List[Strategy] = []
+    for api_config in config_json["api"]:
+        api = Api(api_config)
+        config_json["strategy"]["fund_allocations"] = api_config["fund_allocations"]
+        STRATEGY_LIST.append(Strategy(config_json["strategy"], api))
+    PRICEFEED_ACCESS_TOKEN = ""

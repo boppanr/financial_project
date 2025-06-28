@@ -14,6 +14,7 @@ This project provides a simple and secure way to configure API credentials for t
 
 ```json
 {
+  "sqaure_off_all": "false",
   "pricefeed_creds": {
     "user_id": "",
     "password": "",
@@ -165,5 +166,31 @@ This project provides a simple and secure way to configure API credentials for t
 | `auth_code`   | Authorization code obtained from Fyers login flow  |
 | `app_id`      | Application ID (API key) from Fyers Developer Portal |
 | `app_secret`  | Secret key associated with the App ID               |
+
+---
+
+### 🪙 GoPocket
+
+```json
+{
+  "user_id": "",
+  "user_phone": "",
+  "app_code": "",
+  "app_secret": "",
+  "totp_secret": "",
+  "password": ""
+}
+
+
+```
+
+| Parameter       | Description                                                              |
+| --------------- | ------------------------------------------------------------------------ |
+| `user_id`       | GoPocket user ID                                                         |
+| `user_phone`    | GoPocket user phone number                                               |
+| `app_code`      | Application ID (API key) obtained from the GoPocket API Portal           |
+| `app_secret`    | Secret key associated with the API                                       |
+| `totp_secret`   | TOTP (Time-based One-Time Password) secret used for generating 2FA codes |
+| `password`      | Password of the GoPocket account                                         |
 
 ---

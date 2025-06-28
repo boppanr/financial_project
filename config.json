@@ -1,31 +1,442 @@
 {
+  "sqaure_off_all": "false",
   "pricefeed_creds": {
-    "user_id": "",
-    "password": "",
-    "totp_secret": "",
-    "api_key": "",
-    "api_secret": ""
+    "user_id": "MA2710",
+    "password": "26199493",
+    "totp_secret": "ZKGG4OTQCZ2SXTZL3OHUYM3UCLDI2VKT",
+    "api_key": "5dugmd3zusa6lkuh",
+    "api_secret": "70ynllx2dcadud30mjcnkwnhyv1fhzi6"
   },
   "api": [
     {
       "provider": "zerodha",
       "fund_allocations": {
-        "nifty": 15000,
+        "nifty": 20000,
         "sensex": 20000
       },
       "creds": {
-        "user_id": "",
-        "api_key": "",
-        "password": "",
-        "totp_secret": "",
-        "api_secret": ""
+        "user_id": "VOB171",
+        "api_key": "h5mjwoa6dsaorvu0",
+        "password": "Shan@@123",
+        "totp_secret": "IKP3ZMELTY4AQ3GAKSQSC56LHOU6TH2O",
+        "api_secret": "bjed7og3jfsxjk1hsnolnjbqewxl6uaf"
+      }
+    },
+    {
+      "provider": "zerodha",
+      "fund_allocations": {
+        "nifty": 80000,
+        "sensex": 80000
+      },
+      "creds": {
+        "user_id": "EO7101",
+        "api_key": "9letgq0m9fo92an3",
+        "password": "kgb1983$",
+        "totp_secret": "663MSRZANPUFJDKOMCET5CMKQXXAHML7",
+        "api_secret": "bs6u1u02mp47lzb12qm6802lx7s4pi7n"
+      }
+    },
+    {
+      "provider": "zerodha",
+      "fund_allocations": {
+        "nifty": 80000,
+        "sensex": 80000
+      },
+      "creds": {
+        "user_id": "PCM197",
+        "api_key": "fufsoyauhgkxa8uq",
+        "password": "Aruna@1969",
+        "totp_secret": "BA6TMUJAUAUZK3G2M6KO5I3DOBDWEIOM",
+        "api_secret": "gj6fgq4f1ljit7o51k0ny4b0ryfwutt4"
+      }
+    },
+     {
+      "provider": "zerodha",
+      "fund_allocations": {
+        "nifty": 40000,
+        "sensex": 40000
+      },
+      "creds": {
+        "user_id": "MA2710",
+        "api_key": "5dugmd3zusa6lkuh",
+        "password": "26199493",
+        "totp_secret": "ZKGG4OTQCZ2SXTZL3OHUYM3UCLDI2VKT",
+        "api_secret": "70ynllx2dcadud30mjcnkwnhyv1fhzi6"
+      }
+    },
+    {
+      "provider": "zerodha",
+      "fund_allocations": {
+        "nifty": 80000,
+        "sensex": 80000
+      },
+      "creds": {
+        "user_id": "NI7069",
+        "api_key": "4xth1sipi7p5ygux",
+        "password": "Mandali@0504",
+        "totp_secret": "IFU3DYJWY66AAKG4JIIXPEXCPR3INWBH",
+        "api_secret": "pj21zkitcy4wo78mdvmxmrqawdoo1qob"
+      }
+    },
+    {
+      "provider": "zerodha",
+      "fund_allocations": {
+        "nifty": 40000,
+        "sensex": 40000
+      },
+      "creds": {
+        "user_id": "FMN939",
+        "api_key": "6tj7h9ko25oltcjw",
+        "password": "Shan@@123",
+        "totp_secret": "VP3AUYFEFUJBMEAUR2UUHCKYOUE6GNOI",
+        "api_secret": "i782ku8bghagf0cefkoa5wglq4x23b71"
+      }
+    },
+    {
+      "provider": "zerodha",
+      "fund_allocations": {
+        "nifty": 80000,
+        "sensex": 80000
+      },
+      "creds": {
+        "user_id": "CKT623",
+        "api_key": "4ftonlghiufzhw7g",
+        "password": "Adianu@009",
+        "totp_secret": "LD25ZBNKVNK3X3IQV5B4FW7KAQCUTSZU",
+        "api_secret": "bctiqekp7b2v4yr294zxzfahgh7txx8p"
+      }
+    },    
+    {
+      "provider": "zerodha",
+      "fund_allocations": {
+        "nifty": 70000,
+        "sensex": 70000
+      },
+      "creds": {
+        "user_id": "JXF458",
+        "api_key": "evkjb6en8dhtjxre",
+        "password": "Sai@@123",
+        "totp_secret": "2O3MPLL4CCX3W3U2C75RLIESZ6JYJRGW",
+        "api_secret": "i1mfchosp4o86pda2iu3fv9n82vbu6w7"
+      }
+    },
+    {
+      "provider": "zerodha",
+      "fund_allocations": {
+        "nifty": 25000,
+        "sensex": 25000
+      },
+      "creds": {
+        "user_id": "IZS245",
+        "api_key": "qi0w3xwfi7wnn2wq",
+        "password": "Vanitha@143",
+        "totp_secret": "YLKWXZ2ADCLI5S3ZFVW7DRXT2DQUAB3J",
+        "api_secret": "x8oo4ye3j4fdu72llj9y88qz2nw1t6hy"
+      }
+    },
+    {
+      "provider": "gopocket",
+      "fund_allocations": {
+        "nifty": 80000,
+        "sensex": 80000
+      },
+      "creds": {
+        "user_id": "SKY20415",
+        "user_phone": "7893253579",
+        "app_code": "xFSnmyULtvckOrI",
+        "app_secret": "WANifXJdaTaKaAjpHOpmhWuEyMQEYktmppORLZnPnaOTURYucyUmeLQrMToKycauDhCSBIffhxVFWHaqPgnIRcdPlafIDLumrCrl",
+        "totp_secret": "YGLSOGDEPZTOPUVTUIRGMUIRLYSBSWAM",
+        "password": "Veda@@369"
+     }
+    },
+    {
+      "provider": "gopocket",
+      "fund_allocations": {
+        "nifty": 30000,
+        "sensex": 30000
+      },
+      "creds": {
+        "user_id": "AB2290",
+        "user_phone": "9704567064",
+        "app_code": "kEeaPDvADonFAij",
+        "app_secret": "aEmRFZDcxflfHlIOSZGQxfZSpzprddfITHiyJrkdZITrXIbTWPiQsqgvxNMFlEaqOsvngmGRCXxiQhzFiROnmWlMVQQkahnvSFis",
+        "totp_secret": "RYNTTMKMPVLMNZCIEJKHWKMPUMYGCKKG",
+        "password": "Santosh@1303"
+     }
+    },    
+    {
+      "provider": "gopocket",
+      "fund_allocations": {
+        "nifty": 40000,
+        "sensex": 40000
+      },
+      "creds": {
+        "user_id": "AB2300",
+        "user_phone": "9951726108",
+        "app_code": "CEaVAppqGVGvTdf",
+        "app_secret": "hlPEIqFWuxyqMKxVsSWugExDpovXZjakUHSOtSqqejEFqjOZhrbSFLzsooWKMnJLfyAhiVkqnUxOLSIBqiNmoNNzjfZAFpTyLRSF",
+        "totp_secret": "VSDKCFHOWOSDCEBHRLZFKCXNZLZAJJYR",
+        "password": "Gbnraju@123"
+     }
+    },    
+    {
+      "provider": "GoPocket",
+      "fund_allocations": {
+        "nifty": 80000,
+        "sensex": 80000
+      },
+      "creds": {
+  "user_id": "AB2531",
+  "user_phone": "9692639999",
+  "app_code": "YunKGCqFZkpHcbk",
+  "app_secret": "xyTefyJauTuAjSyLrdybpjulAfnKudjkAkecnvShuBdSPhiRSJNjnssDmbIOJnzyPtIdelFsrEmsiVDLTbFOCHSkGuhWKNZPxKpY",
+  "totp_secret": "RCNGLIJIZLIFNCENBLQVAYCYNFCMPSZT",
+  "password": "Ishvisri143$"
+}
+    },
+    {
+      "provider": "GoPocket",
+      "fund_allocations": {
+        "nifty": 30000,
+        "sensex": 30000
+      },
+      "creds": {
+  "user_id": "AB2461",
+  "user_phone": "9391438549",
+  "app_code": "PDBKOPtBKfGHtBd",
+  "app_secret": "WfkFJLyshASuEKWGJGzspycCZrOWrJOnCeiHERlUMxdQvTvRsXTFzyLeZkBJzkEpyMWnMlAhumENeZaChqlSfsxJbAxUmuKPAAqc",
+  "totp_secret": "TIQXRPSOTGXQTCDZBVLSCFQBPXZOLTPH",
+  "password": "Shan@@123"
+}
+    },
+    {
+      "provider": "GoPocket",
+      "fund_allocations": {
+        "nifty": 40000,
+        "sensex": 40000
+      },
+      "creds": {
+  "user_id": "AB2827",
+  "user_phone": "9849343779",
+  "app_code": "fueOAihjembqzEJ",
+  "app_secret": "FsCJhmTVfiVjoXKFyaznYuNvsAvDnCrWVMPhQgqahlVrLqVAYCmcZaEQJzIxapLpbvjTStKoBXWWpJLUhhNjhWCGcVJviNaOFzqI",
+  "totp_secret": "OYDROOFUDYEHEZNJMCPAFGKYQZUAISMX",
+  "password": "9849343779@Sudh"
+}
+    },
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 40000,
+        "sensex": 40000
+      },
+      "creds": {
+        "user_id": "FN107870",
+        "api_key": "4b585ce2fcf488c045005e2858207368",
+        "password": "Venkat@123",
+        "totp_secret": "S73J5WUM6Y45FD554R7UOC4W2E4X4Y33"
       }
     },
     {
       "provider": "shoonya",
       "fund_allocations": {
-        "banknifty": 15000,
-        "bankex": 20000
+        "nifty": 50000,
+        "sensex": 50000
+      },
+      "creds": {
+        "user_id": "FA411835",
+        "api_key": "acacb8ef88be1154317dd1efbd6036bd",
+        "password": "Srav@@123",
+        "totp_secret": "4QPZ652JW7XSXXBF6N254A45IF72F2V7"
+      }
+    },
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 40000,
+        "sensex": 40000
+      },
+      "creds": {
+        "user_id": "FN124313",
+        "api_key": "7aa699277a383f1f5e064058a6abf423",
+        "password": "Satish@@123",
+        "totp_secret": "Y562HX5Y462YTW63SE2P2ZA3YAALK5N5"
+      }
+    },
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 30000,
+        "sensex": 30000
+      },
+      "creds": {
+        "user_id": "FN127001",
+        "api_key": "1baebc6f96b5dea43cb546d3a758f603",
+        "password": "Suresh@123",
+        "totp_secret": "PO5M6Y4HHGJN34462S2WU3J6RQG6MB72"
+      }
+    },
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 80000,
+        "sensex": 80000
+      },
+      "creds": {
+        "user_id": "FN126559",
+        "api_key": "ca411f0daab7aa2fe72317e56d55bc36",
+        "password": "Kbl1989$",
+        "totp_secret": "23UH3FAWQ6J5DO3647TGJ2752V3TS572"
+      }
+    },
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 80000,
+        "sensex": 80000
+      },
+      "creds": {
+        "user_id": "FN124681",
+        "api_key": "f137934bdc18fa5dfbbc9859db2fd484",
+        "password": "Kodev@1972",
+        "totp_secret": "2OR4C5347Y4P742GGW3644F5TP6746RR"
+      }
+    },
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 0,
+        "sensex": 0
+      },
+      "creds": {
+        "user_id": "FN124302",
+        "api_key": "fbb3dd957ebcc57d2ad42d0306df8ab9",
+        "password": "Giri@@123",
+        "totp_secret": "MRX37X4KGM2QIT7337EN4D57747FRPKL"
+      }
+    },
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 40000,
+        "sensex": 40000
+      },
+      "creds": {
+        "user_id": "FN116633",
+        "api_key": "24cec1ea1fa320dc5b37637101434379",
+        "password": "Kiran@123",
+        "totp_secret": "WT55ML3ZXHMEQ6525225YI42367M5Q3O"
+      }
+    },
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 100000,
+        "sensex": 100000
+      },
+      "creds": {
+        "user_id": "FB2059",
+        "api_key": "8c6cd1408a51c256e32882a83ef1ef83",
+        "password": "Veda@@369",
+        "totp_secret": "3L7BFKK5ESPT2O5KY672PD7H675PX3C4"
+      }
+    },
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 40000,
+        "sensex": 40000
+      },
+      "creds": {
+        "user_id": "FN116721",
+        "api_key": "73268d7d7590f563de09c3b96a4b5cc4",
+        "password": "Vanitha@143",
+        "totp_secret": "E53757JE3777PXYSR7MC225K567HCISG"
+      }
+    },    
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 20000,
+        "sensex": 20000
+      },
+      "creds": {
+        "user_id": "FN112899",
+        "api_key": "aff71287f2faaaf125c28612c52814f8",
+        "password": "Vanitha@@143",
+        "totp_secret": "HL4U327A2A6I6677H355H4LZ44JH2J5N"
+      }
+    },
+       {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 20000,
+        "sensex": 20000
+      },
+      "creds": {
+        "user_id": "FN123771",
+        "api_key": "6ae3f8dbab57e1cf95b5a0e5efb25b2c",
+        "password": "Veda@@369",
+        "totp_secret": "IIK3Y7552JCDFWAIY5OGHWB37PBWV257"
+      }
+    },
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 80000,
+        "sensex": 80000
+      },
+      "creds": {
+        "user_id": "FN131233",
+        "api_key": "56fde1eb711a33c6c26d7ff01051cfd2",
+        "password": "Pranathi@123",
+        "totp_secret": "6D72726V7WS2P3O5TJL2GRKK2YFV7H6R"
+      }
+    },
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 30000,
+        "sensex": 30000
+      },
+      "creds": {
+        "user_id": "",
+        "api_key": "",
+        "password": "",
+        "totp_secret": ""
+      }
+    },
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 75000,
+        "sensex": 75000
+      },
+      "creds": {
+        "user_id": "",
+        "api_key": "",
+        "password": "",
+        "totp_secret": ""
+      }
+    },
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 40000,
+        "sensex": 40000
+      },
+      "creds": {
+        "user_id": "",
+        "api_key": "",
+        "password": "",
+        "totp_secret": ""
+      }
+    },
+    {
+      "provider": "shoonya",
+      "fund_allocations": {
+        "nifty": 40000,
+        "sensex": 40000
       },
       "creds": {
         "user_id": "",
@@ -47,16 +458,16 @@
     }
   ],
   "strategy": {
-    "strategy_end_time": "12:00:00",
-    "check_candle": 20,
-    "buffer_price_percentage": 10,
+    "strategy_end_time": "15:15:00",
+    "check_candle": 38,
+    "buffer_price_percentage": 2,
     "strike_buffer_precentage": 0.15,
-    "stop_loss": 40,
+    "stop_loss": 30,
     "profit_target": 60,
     "trailings": [
       { "profit_move": 25, "stop_loss_move": 1 },
       { "profit_move": 40, "stop_loss_move": 1.25 },
-      { "profit_move": 60, "stop_loss_move": 1.4 }
+      { "profit_move": 49, "stop_loss_move": 1.4 }
     ]
   }
 }

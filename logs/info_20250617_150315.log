@@ -1,0 +1,15 @@
+[0m2025-06-17 15:03:24,507 - INFO     - [22308] - Thread-1 (run) - pricefeed - pricefeed:on_connect - 45: Feed connected successfully.[0m
+[0m2025-06-17 15:03:24,515 - INFO     - [22308] - Thread-1 (run) - pricefeed - pricefeed:subscribe - 82: Succesfully subscribed 3730 tokens.[0m
+[0m2025-06-17 15:03:24,515 - INFO     - [22308] - Thread-1 (run) - pricefeed - pricefeed:on_connect - 52: pricefeed connected, <kiteconnect.ticker.KiteTicker object at 0x000001658795B020>[0m
+[1;41m2025-06-17 15:03:24,562 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in ZERODHA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': '', 'api_secret': ''}[0m
+[1;41m2025-06-17 15:03:27,205 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in GOPOCKET, config: {'user_id': '', 'user_phone': '', 'app_code': '', 'app_secret': '', 'totp_secret': '', 'password': ''}[0m
+[0m2025-06-17 15:03:28,418 - INFO     - [22308] - MainThread - oms - oms:shoonya_login - 224: Shoonya: FN112899 loggedin successfully.[0m
+[1;41m2025-06-17 15:03:28,620 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[1;41m2025-06-17 15:03:28,829 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[1;41m2025-06-17 15:03:29,022 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[1;41m2025-06-17 15:03:29,219 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[1;41m2025-06-17 15:03:29,417 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[1;41m2025-06-17 15:03:29,607 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[1;41m2025-06-17 15:03:29,841 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in GROWW, config: {'user_id': '', 'api_key': ''}[0m
+[0m2025-06-17 15:03:29,859 - INFO     - [22308] - MainThread - root - main:main - 285: ========= Next check-time: 15:20:00 =========[0m
+[93m2025-06-17 15:04:00,271 - WARNING  - [22308] - MainThread - root - main:main - 587: Keyboard Interrupt[0m

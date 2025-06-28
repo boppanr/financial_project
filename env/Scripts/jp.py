@@ -1,4 +1,4 @@
-#!E:\38mincandle-multi-users\env\Scripts\python.exe
+#!E:\Multiple User On Thread\env\Scripts\python.exe
 
 import sys
 import json

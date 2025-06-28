@@ -5,6 +5,7 @@ class ApiProvider(Enum):
     SHOONYA = "SHOONYA"
     FYERS = "FYERS"
     GROWW = "GROWW"
+    GOPOCKET = "GOPOCKET"
     DUMMY = "DUMMY"
     
 class Side(Enum):

@@ -1,17 +1,23 @@
 import datetime
 import logging
-import time
-from typing import List
 from queue import Queue
+import time
 from kiteconnect import KiteTicker
+import pytz
 import requests
 from config import Config
-from instruments import instruments
+from instruments import underlying_instruments
 
-ltps = {}
-historical_data = {}
 
 logger = logging.getLogger(__name__)
+last_heart_beat = time.time()
+count = 0
+all_connections: list[KiteTicker] = []
+ltps = {}
+historical_data = {}
+price_queue = Queue()
+tokens_to_subscribe = set()
+running_connection = None
 
 class PricePkt:
     def __init__(self, instrument_token: str, ltp: float):
@@ -19,78 +25,115 @@ class PricePkt:
         self.ltp = ltp
 
 
-class Pricefeed:
-    def __init__(self, api_key: str, access_token: str, price_queue: Queue):
-        self.price_queue = price_queue
-        self.ws = KiteTicker(
-            api_key=api_key,
-            access_token=access_token,
-            debug=False,
-            root=None,
-            reconnect=True,
-            reconnect_max_tries=100,
-            reconnect_max_delay=15,
-            connect_timeout=10,
+def connect():
+    global running_connection
+    pricefeed_connection = KiteTicker(
+        api_key=Config.PRICEFEED_CREDS["api_key"],
+        access_token=Config.PRICEFEED_ACCESS_TOKEN,
+        debug=False,
+        root=None,
+        reconnect=True,
+        reconnect_max_tries=100,
+        reconnect_max_delay=5,
+        connect_timeout=10,
+    )
+    all_connections.append(pricefeed_connection)
+    pricefeed_connection.on_connect = on_connect
+    pricefeed_connection.on_ticks = on_ticks
+    pricefeed_connection.on_close = on_close
+    pricefeed_connection.on_error = or_error
+    pricefeed_connection.on_reconnect = on_reconnect
+    running_connection = pricefeed_connection
+    pricefeed_connection.connect(threaded=True)
+
+
+def on_connect(ws: KiteTicker, _):
+    global last_heart_beat, tokens_to_subscribe
+    logger.info("Feed connected successfully.")
+    for und_inst in underlying_instruments.values():
+        tokens_to_subscribe.add(int(und_inst.instrument_id))
+    tkn_to_subscribe = list(tokens_to_subscribe)
+    if len(tkn_to_subscribe) > 0:
+        logger.info(tkn_to_subscribe)
+        tkn_to_subscribe = tkn_to_subscribe[:4000]
+        ws.subscribe(tkn_to_subscribe)
+        ws.set_mode(
+            ws.MODE_FULL, tkn_to_subscribe
         )
+        logger.info(f"Succesfully subscribed {len(tkn_to_subscribe)} tokens.")
+        last_heart_beat = time.time()
+    logger.info(f"pricefeed connected, {ws}")
 
 
-    def connect(self):
-        self.ws.on_connect = self.on_connect
-        self.ws.on_ticks = self.on_ticks
-        self.ws.on_close = self.on_close
-        self.ws.connect(threaded=True)
+def on_ticks(_, ticks: dict):
+    global last_heart_beat, count
+    for pkt in ticks:
+        if "depth" in pkt:
+            ask_price = pkt['depth']['buy'][0]['price']
+            bid_price = pkt['depth']['sell'][0]['price']
+            volume_traded = pkt["volume_traded"]
+        else:
+            # for BANKNIFTY and NIFTY Index
+            ask_price = 1
+            bid_price = 1
+            volume_traded = 1
+        if (ask_price != 0) and (bid_price != 0) and (volume_traded != 0):
+            instrument_token = str(pkt["instrument_token"])
+            ltp = pkt["last_price"]
+            # exchange_timestamp: datetime.datetime = pkt['exchange_timestamp']
+            ltps[instrument_token] = ltp
+            price_queue.put(PricePkt(instrument_token, ltp))
+            count += 1
 
 
-    def on_connect(self, ws: KiteTicker, _):
-        logger.info("Feed connected successfully.")
-        tokens_to_subscribe = [
-            int(instrument["pricefeed_token"]) for instrument in instruments.values()
-        ]
-        if len(tokens_to_subscribe) > 0:
-            tokens_to_subscribe = tokens_to_subscribe[:4000]
-            self.subscribe(tokens_to_subscribe)
-        logger.info(f"pricefeed connected, {ws}")
+def on_close(_, code, reason):
+    logger.debug(f"Closed feed with code={code}, reason={reason}")
 
 
-    def on_ticks(self, _, ticks: dict):
-        for pkt in ticks:
-            if "depth" in pkt:
-                ask_price = pkt['depth']['buy'][0]['price']
-                bid_price = pkt['depth']['sell'][0]['price']
-                volume_traded = pkt["volume_traded"]
+def or_error(_, code, reason):
+    logger.debug(f"{code}:: {reason}")
+
+
+def on_reconnect(_, attempts_count):
+    logger.debug(f"attempts: {attempts_count}")
+
+
+def subscribe_token(token):
+    global running_connection, tokens_to_subscribe
+    tokens_to_subscribe.add(int(token))
+    running_connection.subscribe([int(token)])
+    logger.debug(f"Subsribed to {token}")
+
+
+def get_quote_from_stream():
+    return price_queue.get()
+
+
+def heartbeat():
+    global last_heart_beat, count
+    while True:
+        current_time = datetime.datetime.now(pytz.timezone("Asia/Kolkata")).replace(microsecond=0).time()
+        if current_time <= datetime.time(9, 15):
+            time.sleep(1)
+            continue
+        if time.time()-last_heart_beat>=20:
+            if count == 0:
+                logger.warning(f"Trying to reconnect pricefeed.")
+                for conn in all_connections:
+                    conn.close()
+                all_connections.clear()
+                connect()
             else:
-                # for BANKNIFTY and NIFTY Index
-                ask_price = 1
-                bid_price = 1
-                volume_traded = 1
-            if (ask_price != 0) and (bid_price != 0) and (volume_traded != 0):
-                instrument_token = str(pkt["instrument_token"])
-                ltp = pkt["last_price"]
-                # exchange_timestamp: datetime.datetime = pkt['exchange_timestamp']
-                ltps[instrument_token] = ltp
-                self.price_queue.put(PricePkt(instrument_token, ltp))
-
-
-    def on_close(self, _, code, reason):
-        logger.critical(f"Closed feed with code={code}, reason={reason}")
-
-
-    def subscribe(self, tokens: List[str]):
-        tokens = list(map(int, tokens))
-        self.ws.subscribe(tokens)
-        self.ws.set_mode(self.ws.MODE_FULL, tokens)
-        logger.info(f"Succesfully subscribed {len(tokens)} tokens.")
-
-
-    def unsubscribe(self, tokens: List[str]):
-        tokens = list(map(int, tokens))
-        self.ws.unsubscribe(tokens)
+                logger.debug(f"HEARTBEAT:: {count}")
+                count = 0
+            last_heart_beat = time.time()
+        time.sleep(0.1)
 
 
 def get_high_low_historical_data(instrument_token: str, timeframe: float, end_time: datetime.time):
     if instrument_token in historical_data:
-        if timeframe in historical_data[instrument_token]:
-            return historical_data[instrument_token][timeframe]["high"], historical_data[instrument_token][timeframe]["low"]
+        if end_time in historical_data[instrument_token]:
+            return historical_data[instrument_token][end_time]["high"], historical_data[instrument_token][end_time]["low"]
     url = f"https://api.kite.trade/instruments/historical/{instrument_token}/minute"
     today = datetime.datetime.today().date()
     end_datetime = datetime.datetime.combine(today, end_time)
@@ -120,7 +163,7 @@ def get_high_low_historical_data(instrument_token: str, timeframe: float, end_ti
         low = min(row[3] for row in flat_data)
         if not instrument_token in historical_data:
             historical_data[instrument_token] = {}
-        historical_data[instrument_token][timeframe] = {
+        historical_data[instrument_token][end_time] = {
             "high": high,
             "low": low
         }

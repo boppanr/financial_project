@@ -1,0 +1,249 @@
+[0m2025-06-19 09:14:02,425 - INFO     - [8624] - Thread-1 (run) - pricefeed - pricefeed:on_connect - 45: Feed connected successfully.[0m
+[0m2025-06-19 09:14:02,433 - INFO     - [8624] - Thread-1 (run) - pricefeed - pricefeed:subscribe - 82: Succesfully subscribed 3706 tokens.[0m
+[0m2025-06-19 09:14:02,434 - INFO     - [8624] - Thread-1 (run) - pricefeed - pricefeed:on_connect - 52: pricefeed connected, <kiteconnect.ticker.KiteTicker object at 0x0000028E168F9220>[0m
+[0m2025-06-19 09:14:02,768 - INFO     - [8624] - MainThread - oms - oms:zerodha_login - 189: Zerodha: FMN939 loggedin successfully.[0m
+[1;41m2025-06-19 09:14:04,323 - CRITICAL - [8624] - MainThread - root - main:main - 279: Error while login in GOPOCKET, config: {'user_id': '', 'user_phone': '', 'app_code': '', 'app_secret': '', 'totp_secret': '', 'password': ''}[0m
+[0m2025-06-19 09:14:04,573 - INFO     - [8624] - MainThread - oms - oms:shoonya_login - 224: Shoonya: FN112899 loggedin successfully.[0m
+[0m2025-06-19 09:14:04,780 - INFO     - [8624] - MainThread - oms - oms:shoonya_login - 224: Shoonya: FN123771 loggedin successfully.[0m
+[1;41m2025-06-19 09:14:04,988 - CRITICAL - [8624] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[1;41m2025-06-19 09:14:05,194 - CRITICAL - [8624] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[1;41m2025-06-19 09:14:05,400 - CRITICAL - [8624] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[1;41m2025-06-19 09:14:05,608 - CRITICAL - [8624] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[1;41m2025-06-19 09:14:05,814 - CRITICAL - [8624] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[1;41m2025-06-19 09:14:06,106 - CRITICAL - [8624] - MainThread - root - main:main - 279: Error while login in GROWW, config: {'user_id': '', 'api_key': ''}[0m
+[0m2025-06-19 09:14:06,109 - INFO     - [8624] - MainThread - root - main:main - 285: ========= Next check-time: 09:38:00 =========[0m
+[0m2025-06-19 09:38:00,197 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 09:38:00,737 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FMN939 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24900.0-CE): High=35.15, Entry=39.35, Qty=975[0m
+[0m2025-06-19 09:38:00,737 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FMN939 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24900.0-CE, Side:BUY, Qty: 975[0m
+[0m2025-06-19 09:38:00,737 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FMN939 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24700.0-PE): High=48, Entry=53.75, Qty=675[0m
+[0m2025-06-19 09:38:00,737 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FMN939 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24700.0-PE, Side:BUY, Qty: 675[0m
+[0m2025-06-19 09:38:01,297 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FMN939 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81600.0-CE): High=473, Entry=506.1, Qty=60[0m
+[0m2025-06-19 09:38:01,298 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FMN939 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81600.0-CE, Side:BUY, Qty: 60[0m
+[0m2025-06-19 09:38:01,298 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FMN939 - SENSEX: PE(BFO-SENSEX-OPTIDX-250624-81100.0-PE): High=443.2, Entry=474.2, Qty=80[0m
+[0m2025-06-19 09:38:01,298 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FMN939 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81100.0-PE, Side:BUY, Qty: 80[0m
+[0m2025-06-19 09:38:01,298 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 10:16:00 =========[0m
+[0m2025-06-19 09:38:01,298 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 09:38:01,298 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN112899 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24900.0-CE): High=35.15, Entry=39.35, Qty=450[0m
+[0m2025-06-19 09:38:01,298 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN112899 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24900.0-CE, Side:BUY, Qty: 450[0m
+[0m2025-06-19 09:38:01,299 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN112899 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24700.0-PE): High=48, Entry=53.75, Qty=300[0m
+[0m2025-06-19 09:38:01,299 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN112899 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24700.0-PE, Side:BUY, Qty: 300[0m
+[0m2025-06-19 09:38:01,299 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN112899 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81600.0-CE): High=473, Entry=506.1, Qty=20[0m
+[0m2025-06-19 09:38:01,299 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN112899 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81600.0-CE, Side:BUY, Qty: 20[0m
+[0m2025-06-19 09:38:01,299 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN112899 - SENSEX: PE(BFO-SENSEX-OPTIDX-250624-81100.0-PE): High=443.2, Entry=474.2, Qty=40[0m
+[0m2025-06-19 09:38:01,299 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN112899 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81100.0-PE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 09:38:01,299 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 10:16:00 =========[0m
+[0m2025-06-19 09:38:01,299 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 09:38:01,299 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN123771 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24900.0-CE): High=35.15, Entry=39.35, Qty=450[0m
+[0m2025-06-19 09:38:01,299 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN123771 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24900.0-CE, Side:BUY, Qty: 450[0m
+[0m2025-06-19 09:38:01,299 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN123771 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24700.0-PE): High=48, Entry=53.75, Qty=300[0m
+[0m2025-06-19 09:38:01,300 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN123771 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24700.0-PE, Side:BUY, Qty: 300[0m
+[0m2025-06-19 09:38:01,300 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN123771 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81600.0-CE): High=473, Entry=506.1, Qty=20[0m
+[0m2025-06-19 09:38:01,300 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN123771 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81600.0-CE, Side:BUY, Qty: 20[0m
+[0m2025-06-19 09:38:01,300 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN123771 - SENSEX: PE(BFO-SENSEX-OPTIDX-250624-81100.0-PE): High=443.2, Entry=474.2, Qty=40[0m
+[0m2025-06-19 09:38:01,300 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN123771 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81100.0-PE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 09:38:01,300 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 10:16:00 =========[0m
+[0m2025-06-19 10:16:00,179 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 10:16:00,180 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24900.0-CE d49473074481458f830fac5c78083f52 is CANCELLED[0m
+[0m2025-06-19 10:16:00,180 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24700.0-PE 0d26764716a847039d5413fd4fba5015 is CANCELLED[0m
+[0m2025-06-19 10:16:00,765 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FMN939 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24900.0-CE): High=25.9, Entry=29.0, Qty=1350[0m
+[0m2025-06-19 10:16:00,766 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FMN939 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24900.0-CE, Side:BUY, Qty: 1350[0m
+[0m2025-06-19 10:16:00,766 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FMN939 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24800.0-PE): High=28.75, Entry=32.2, Qty=1200[0m
+[0m2025-06-19 10:16:00,766 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FMN939 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24800.0-PE, Side:BUY, Qty: 1200[0m
+[0m2025-06-19 10:16:00,766 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81600.0-CE a2f5457eb9e64aee8755cef9e7eb581e is CANCELLED[0m
+[0m2025-06-19 10:16:00,766 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81100.0-PE a05391b33cc4418696d096192583e799 is CANCELLED[0m
+[0m2025-06-19 10:16:01,364 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FMN939 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81700.0-CE): High=440.75, Entry=471.6, Qty=80[0m
+[0m2025-06-19 10:16:01,364 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FMN939 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81700.0-CE, Side:BUY, Qty: 80[0m
+[0m2025-06-19 10:16:01,364 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FMN939 - SENSEX: PE(BFO-SENSEX-OPTIDX-250624-81300.0-PE): High=360.8, Entry=386.05, Qty=100[0m
+[0m2025-06-19 10:16:01,365 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FMN939 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81300.0-PE, Side:BUY, Qty: 100[0m
+[0m2025-06-19 10:16:01,365 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 10:54:00 =========[0m
+[0m2025-06-19 10:16:01,365 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 10:16:01,365 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24900.0-CE 0493ed0e86134833b47eccd58d9fd04b is CANCELLED[0m
+[0m2025-06-19 10:16:01,365 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24700.0-PE b520dd0c0b6741cfb3090b5806fc4f22 is CANCELLED[0m
+[0m2025-06-19 10:16:01,365 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN112899 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24900.0-CE): High=25.9, Entry=29.0, Qty=675[0m
+[0m2025-06-19 10:16:01,365 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN112899 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24900.0-CE, Side:BUY, Qty: 675[0m
+[0m2025-06-19 10:16:01,365 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN112899 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24800.0-PE): High=28.75, Entry=32.2, Qty=600[0m
+[0m2025-06-19 10:16:01,365 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN112899 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24800.0-PE, Side:BUY, Qty: 600[0m
+[0m2025-06-19 10:16:01,365 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81600.0-CE 7c74ef9a3f8d478f84ad3e922e65e1ae is CANCELLED[0m
+[0m2025-06-19 10:16:01,365 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81100.0-PE 322487e123e140dcbf797631b739b3b9 is CANCELLED[0m
+[0m2025-06-19 10:16:01,366 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN112899 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81700.0-CE): High=440.75, Entry=471.6, Qty=40[0m
+[0m2025-06-19 10:16:01,366 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN112899 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81700.0-CE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 10:16:01,366 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN112899 - SENSEX: PE(BFO-SENSEX-OPTIDX-250624-81300.0-PE): High=360.8, Entry=386.05, Qty=40[0m
+[0m2025-06-19 10:16:01,366 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN112899 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81300.0-PE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 10:16:01,366 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 10:54:00 =========[0m
+[0m2025-06-19 10:16:01,366 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 10:16:01,366 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24900.0-CE f1b4ba12f61b428ca14ef25fbb83f11f is CANCELLED[0m
+[0m2025-06-19 10:16:01,366 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24700.0-PE a59f5a19b1e14eea8579eb17313781b7 is CANCELLED[0m
+[0m2025-06-19 10:16:01,366 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN123771 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24900.0-CE): High=25.9, Entry=29.0, Qty=675[0m
+[0m2025-06-19 10:16:01,366 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN123771 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24900.0-CE, Side:BUY, Qty: 675[0m
+[0m2025-06-19 10:16:01,366 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN123771 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24800.0-PE): High=28.75, Entry=32.2, Qty=600[0m
+[0m2025-06-19 10:16:01,367 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN123771 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24800.0-PE, Side:BUY, Qty: 600[0m
+[0m2025-06-19 10:16:01,367 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81600.0-CE 403a883e67774f968c0bfe1c8630cbc0 is CANCELLED[0m
+[0m2025-06-19 10:16:01,367 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81100.0-PE 1f1d3c8b4e52405b860c8d7f404cd26f is CANCELLED[0m
+[0m2025-06-19 10:16:01,367 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN123771 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81700.0-CE): High=440.75, Entry=471.6, Qty=40[0m
+[0m2025-06-19 10:16:01,367 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN123771 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81700.0-CE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 10:16:01,367 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN123771 - SENSEX: PE(BFO-SENSEX-OPTIDX-250624-81300.0-PE): High=360.8, Entry=386.05, Qty=40[0m
+[0m2025-06-19 10:16:01,367 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN123771 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81300.0-PE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 10:16:01,367 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 10:54:00 =========[0m
+[0m2025-06-19 10:54:00,248 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 10:54:00,249 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24900.0-CE d1990a25f4994a54a782de699ba4073d is CANCELLED[0m
+[0m2025-06-19 10:54:00,249 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24800.0-PE ef6e2726b63647e499128c426d94b1e0 is CANCELLED[0m
+[0m2025-06-19 10:54:01,186 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FMN939 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24900.0-CE): High=14, Entry=15.7, Qty=2475[0m
+[0m2025-06-19 10:54:01,186 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FMN939 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24900.0-CE, Side:BUY, Qty: 2475[0m
+[0m2025-06-19 10:54:01,187 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FMN939 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24750.0-PE): High=18.35, Entry=20.55, Qty=1875[0m
+[0m2025-06-19 10:54:01,187 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FMN939 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24750.0-PE, Side:BUY, Qty: 1875[0m
+[0m2025-06-19 10:54:01,187 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81700.0-CE 56bf02017f6d43189e7d532e3466e346 is CANCELLED[0m
+[0m2025-06-19 10:54:01,188 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81300.0-PE 58ec755dbe444ef5bf9b29b8307806ce is CANCELLED[0m
+[0m2025-06-19 10:54:02,093 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FMN939 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81700.0-CE): High=386, Entry=413.0, Qty=80[0m
+[0m2025-06-19 10:54:02,094 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FMN939 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81700.0-CE, Side:BUY, Qty: 80[0m
+[0m2025-06-19 10:54:02,094 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FMN939 - SENSEX: PE(BFO-SENSEX-OPTIDX-250624-81300.0-PE): High=378.1, Entry=404.55, Qty=80[0m
+[0m2025-06-19 10:54:02,094 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FMN939 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81300.0-PE, Side:BUY, Qty: 80[0m
+[0m2025-06-19 10:54:02,094 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 11:32:00 =========[0m
+[0m2025-06-19 10:54:02,094 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 10:54:02,094 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24900.0-CE 9f5ddf47df2544dfa50cc9ba246dd87e is CANCELLED[0m
+[0m2025-06-19 10:54:02,094 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24800.0-PE a46b791e1fe34c1ba4418c0b5140a651 is CANCELLED[0m
+[0m2025-06-19 10:54:02,095 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN112899 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24900.0-CE): High=14, Entry=15.7, Qty=1200[0m
+[0m2025-06-19 10:54:02,095 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN112899 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24900.0-CE, Side:BUY, Qty: 1200[0m
+[0m2025-06-19 10:54:02,095 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN112899 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24750.0-PE): High=18.35, Entry=20.55, Qty=900[0m
+[0m2025-06-19 10:54:02,095 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN112899 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24750.0-PE, Side:BUY, Qty: 900[0m
+[0m2025-06-19 10:54:02,095 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81700.0-CE edd1728ae5454a0a93bf73afb8051e95 is CANCELLED[0m
+[0m2025-06-19 10:54:02,095 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81300.0-PE b34f0a85dbad4bdc921db3c52ec0bbc0 is CANCELLED[0m
+[0m2025-06-19 10:54:02,095 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN112899 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81700.0-CE): High=386, Entry=413.0, Qty=40[0m
+[0m2025-06-19 10:54:02,095 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN112899 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81700.0-CE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 10:54:02,095 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN112899 - SENSEX: PE(BFO-SENSEX-OPTIDX-250624-81300.0-PE): High=378.1, Entry=404.55, Qty=40[0m
+[0m2025-06-19 10:54:02,095 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN112899 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81300.0-PE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 10:54:02,095 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 11:32:00 =========[0m
+[0m2025-06-19 10:54:02,096 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 10:54:02,096 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24900.0-CE 78c4ca0f847a40eea5aedc61dce25b29 is CANCELLED[0m
+[0m2025-06-19 10:54:02,096 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24800.0-PE 9c91627da1fc44b2a0ab30c780b7c340 is CANCELLED[0m
+[0m2025-06-19 10:54:02,096 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN123771 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24900.0-CE): High=14, Entry=15.7, Qty=1200[0m
+[0m2025-06-19 10:54:02,096 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN123771 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24900.0-CE, Side:BUY, Qty: 1200[0m
+[0m2025-06-19 10:54:02,096 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN123771 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24750.0-PE): High=18.35, Entry=20.55, Qty=900[0m
+[0m2025-06-19 10:54:02,096 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN123771 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24750.0-PE, Side:BUY, Qty: 900[0m
+[0m2025-06-19 10:54:02,096 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81700.0-CE 9dddf9ba2c0c460cbc2fc51190552b72 is CANCELLED[0m
+[0m2025-06-19 10:54:02,096 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81300.0-PE fb15ff11cb3e4da8934c70dc952bca23 is CANCELLED[0m
+[0m2025-06-19 10:54:02,096 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN123771 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81700.0-CE): High=386, Entry=413.0, Qty=40[0m
+[0m2025-06-19 10:54:02,096 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN123771 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81700.0-CE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 10:54:02,096 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN123771 - SENSEX: PE(BFO-SENSEX-OPTIDX-250624-81300.0-PE): High=378.1, Entry=404.55, Qty=40[0m
+[0m2025-06-19 10:54:02,096 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN123771 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81300.0-PE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 10:54:02,097 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 11:32:00 =========[0m
+[0m2025-06-19 11:25:48,524 - INFO     - [8624] - MainThread - root - main:main - 478: user_id: FMN939 - BFO-SENSEX-OPTIDX-250624-81300.0-PE Order Triggered ::: ltp: 404.8 >= trigger_price: 404.55[0m
+[0m2025-06-19 11:25:48,527 - INFO     - [8624] - Thread-2 (place_order) - oms - oms:place_order - 852: Placing Order for BFO-SENSEX-OPTIDX-250624-81300.0-PE id: fa7d1248e39d4890a37df926520cbca5[0m
+[0m2025-06-19 11:25:48,527 - INFO     - [8624] - MainThread - root - main:main - 478: user_id: FN112899 - BFO-SENSEX-OPTIDX-250624-81300.0-PE Order Triggered ::: ltp: 404.8 >= trigger_price: 404.55[0m
+[0m2025-06-19 11:25:48,530 - INFO     - [8624] - Thread-2 (place_order) - oms - oms:zerodha_place_order - 521: b2kDD5SMAYUwUqKTxnU4EIKZxI1B2jTW[0m
+[0m2025-06-19 11:25:48,532 - INFO     - [8624] - Thread-3 (place_order) - oms - oms:place_order - 852: Placing Order for BFO-SENSEX-OPTIDX-250624-81300.0-PE id: ad29305bb26f48b49fbda0ab40a13284[0m
+[0m2025-06-19 11:25:48,532 - INFO     - [8624] - MainThread - root - main:main - 478: user_id: FN123771 - BFO-SENSEX-OPTIDX-250624-81300.0-PE Order Triggered ::: ltp: 404.8 >= trigger_price: 404.55[0m
+[0m2025-06-19 11:25:48,540 - INFO     - [8624] - Thread-4 (place_order) - oms - oms:place_order - 852: Placing Order for BFO-SENSEX-OPTIDX-250624-81300.0-PE id: 9721620e702a42aabf83c39ab7ce51b1[0m
+[0m2025-06-19 11:25:50,286 - INFO     - [8624] - MainThread - oms - oms:zerodha_get_orderbook - 598: FILLED ::: BFO-SENSEX-OPTIDX-250624-81300.0-PE@408.4, side:BUY, qty:80[0m
+[0m2025-06-19 11:25:50,288 - INFO     - [8624] - MainThread - root - main:main - 493: user_id: FMN939 - BFO-SENSEX-OPTIDX-250624-81300.0-PE, Trigger Price: 404.55, Avg Buy Price: 408.4, StopLoss Price: 283.2, ProfitTarget Price: 647.3[0m
+[0m2025-06-19 11:25:53,017 - INFO     - [8624] - MainThread - oms - oms:finvasia_get_orderbook - 511: FILLED ::: BFO-SENSEX-OPTIDX-250624-81300.0-PE@407.75, side:BUY, qty:40[0m
+[0m2025-06-19 11:25:53,019 - INFO     - [8624] - MainThread - root - main:main - 493: user_id: FN123771 - BFO-SENSEX-OPTIDX-250624-81300.0-PE, Trigger Price: 404.55, Avg Buy Price: 407.75, StopLoss Price: 283.2, ProfitTarget Price: 647.3[0m
+[0m2025-06-19 11:25:54,013 - INFO     - [8624] - MainThread - oms - oms:finvasia_get_orderbook - 511: FILLED ::: BFO-SENSEX-OPTIDX-250624-81300.0-PE@407.7, side:BUY, qty:40[0m
+[0m2025-06-19 11:25:54,014 - INFO     - [8624] - MainThread - root - main:main - 493: user_id: FN112899 - BFO-SENSEX-OPTIDX-250624-81300.0-PE, Trigger Price: 404.55, Avg Buy Price: 407.7, StopLoss Price: 283.2, ProfitTarget Price: 647.3[0m
+[0m2025-06-19 11:32:00,178 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 11:32:00,179 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24900.0-CE 634cfda7afcb41c0aaf83aa1e2b284ae is CANCELLED[0m
+[0m2025-06-19 11:32:00,179 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24750.0-PE 947c4b49023945aaa1209d4df1011f62 is CANCELLED[0m
+[0m2025-06-19 11:32:01,116 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FMN939 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24850.0-CE): High=16.45, Entry=18.4, Qty=2100[0m
+[0m2025-06-19 11:32:01,117 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FMN939 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24850.0-CE, Side:BUY, Qty: 2100[0m
+[0m2025-06-19 11:32:01,117 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FMN939 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24750.0-PE): High=16.85, Entry=18.85, Qty=2100[0m
+[0m2025-06-19 11:32:01,118 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FMN939 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24750.0-PE, Side:BUY, Qty: 2100[0m
+[0m2025-06-19 11:32:01,118 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81700.0-CE f07cf0f7c685434787a7f65b73bffec7 is CANCELLED[0m
+[0m2025-06-19 11:32:01,119 - INFO     - [8624] - MainThread - root - main:main - 341: user_id: FMN939 - Running Put Position for SENSEX not taking new entry.[0m
+[0m2025-06-19 11:32:02,062 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FMN939 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81600.0-CE): High=412.3, Entry=441.15, Qty=80[0m
+[0m2025-06-19 11:32:02,063 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FMN939 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81600.0-CE, Side:BUY, Qty: 80[0m
+[0m2025-06-19 11:32:02,063 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 12:10:00 =========[0m
+[0m2025-06-19 11:32:02,063 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 11:32:02,064 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24900.0-CE edd4d859e8e94491a3c4a58aca019994 is CANCELLED[0m
+[0m2025-06-19 11:32:02,064 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24750.0-PE 28c4b83b2cb941d69cc29d2acfa1c2e6 is CANCELLED[0m
+[0m2025-06-19 11:32:02,065 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN112899 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24850.0-CE): High=16.45, Entry=18.4, Qty=1050[0m
+[0m2025-06-19 11:32:02,065 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN112899 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24850.0-CE, Side:BUY, Qty: 1050[0m
+[0m2025-06-19 11:32:02,065 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN112899 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24750.0-PE): High=16.85, Entry=18.85, Qty=1050[0m
+[0m2025-06-19 11:32:02,066 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN112899 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24750.0-PE, Side:BUY, Qty: 1050[0m
+[0m2025-06-19 11:32:02,068 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81700.0-CE 3e03000d9dab4874b0a0e80df64de40d is CANCELLED[0m
+[0m2025-06-19 11:32:02,070 - INFO     - [8624] - MainThread - root - main:main - 341: user_id: FN112899 - Running Put Position for SENSEX not taking new entry.[0m
+[0m2025-06-19 11:32:02,072 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN112899 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81600.0-CE): High=412.3, Entry=441.15, Qty=40[0m
+[0m2025-06-19 11:32:02,073 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN112899 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81600.0-CE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 11:32:02,073 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 12:10:00 =========[0m
+[0m2025-06-19 11:32:02,073 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 11:32:02,074 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24900.0-CE 2f27744d5c7345ea821401c3d1751207 is CANCELLED[0m
+[0m2025-06-19 11:32:02,075 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24750.0-PE f4d528c993ca48489bd98ea1f9a22916 is CANCELLED[0m
+[0m2025-06-19 11:32:02,075 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN123771 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24850.0-CE): High=16.45, Entry=18.4, Qty=1050[0m
+[0m2025-06-19 11:32:02,075 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN123771 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24850.0-CE, Side:BUY, Qty: 1050[0m
+[0m2025-06-19 11:32:02,075 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN123771 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24750.0-PE): High=16.85, Entry=18.85, Qty=1050[0m
+[0m2025-06-19 11:32:02,076 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN123771 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24750.0-PE, Side:BUY, Qty: 1050[0m
+[0m2025-06-19 11:32:02,077 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81700.0-CE 9ecec820a6f24eb8aa7da5afb1a5b967 is CANCELLED[0m
+[0m2025-06-19 11:32:02,078 - INFO     - [8624] - MainThread - root - main:main - 341: user_id: FN123771 - Running Put Position for SENSEX not taking new entry.[0m
+[0m2025-06-19 11:32:02,079 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN123771 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81600.0-CE): High=412.3, Entry=441.15, Qty=40[0m
+[0m2025-06-19 11:32:02,079 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN123771 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81600.0-CE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 11:32:02,080 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 12:10:00 =========[0m
+[0m2025-06-19 12:10:00,268 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 12:10:00,271 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24850.0-CE 554a1eac1cb64ff3b67226339ae1994b is CANCELLED[0m
+[0m2025-06-19 12:10:00,275 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24750.0-PE 5d24c44d23bd4c21a8bba1e73be0df53 is CANCELLED[0m
+[0m2025-06-19 12:10:01,242 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FMN939 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24850.0-CE): High=14.6, Entry=16.35, Qty=2400[0m
+[0m2025-06-19 12:10:01,242 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FMN939 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24850.0-CE, Side:BUY, Qty: 2400[0m
+[0m2025-06-19 12:10:01,243 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FMN939 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24750.0-PE): High=14.55, Entry=16.3, Qty=2400[0m
+[0m2025-06-19 12:10:01,244 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FMN939 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24750.0-PE, Side:BUY, Qty: 2400[0m
+[0m2025-06-19 12:10:01,244 - INFO     - [8624] - MainThread - root - main:main - 341: user_id: FMN939 - Running Put Position for SENSEX not taking new entry.[0m
+[0m2025-06-19 12:10:01,245 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81600.0-CE 9385b42f2f484894ab95e606a03092a4 is CANCELLED[0m
+[0m2025-06-19 12:10:02,322 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FMN939 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81600.0-CE): High=434.8, Entry=465.25, Qty=80[0m
+[0m2025-06-19 12:10:02,322 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FMN939 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81600.0-CE, Side:BUY, Qty: 80[0m
+[0m2025-06-19 12:10:02,322 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 12:48:00 =========[0m
+[0m2025-06-19 12:10:02,322 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 12:10:02,323 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24850.0-CE b6aad913eeff4d3b92347308de83b300 is CANCELLED[0m
+[0m2025-06-19 12:10:02,323 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24750.0-PE d82f67eb88884616a7a0884eafb86dad is CANCELLED[0m
+[0m2025-06-19 12:10:02,323 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN112899 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24850.0-CE): High=14.6, Entry=16.35, Qty=1200[0m
+[0m2025-06-19 12:10:02,324 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN112899 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24850.0-CE, Side:BUY, Qty: 1200[0m
+[0m2025-06-19 12:10:02,325 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN112899 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24750.0-PE): High=14.55, Entry=16.3, Qty=1200[0m
+[0m2025-06-19 12:10:02,326 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN112899 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24750.0-PE, Side:BUY, Qty: 1200[0m
+[0m2025-06-19 12:10:02,326 - INFO     - [8624] - MainThread - root - main:main - 341: user_id: FN112899 - Running Put Position for SENSEX not taking new entry.[0m
+[0m2025-06-19 12:10:02,327 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81600.0-CE f35f48dd885241489b82fa1d2fe4bb37 is CANCELLED[0m
+[0m2025-06-19 12:10:02,327 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN112899 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81600.0-CE): High=434.8, Entry=465.25, Qty=40[0m
+[0m2025-06-19 12:10:02,330 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN112899 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81600.0-CE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 12:10:02,333 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 12:48:00 =========[0m
+[0m2025-06-19 12:10:02,335 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 12:10:02,337 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24850.0-CE 1b3952d025e14421b365b028c86a910b is CANCELLED[0m
+[0m2025-06-19 12:10:02,338 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24750.0-PE 32683e84eb6140b0ac6c7cbc76426f92 is CANCELLED[0m
+[0m2025-06-19 12:10:02,339 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN123771 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24850.0-CE): High=14.6, Entry=16.35, Qty=1200[0m
+[0m2025-06-19 12:10:02,341 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN123771 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24850.0-CE, Side:BUY, Qty: 1200[0m
+[0m2025-06-19 12:10:02,343 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN123771 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24750.0-PE): High=14.55, Entry=16.3, Qty=1200[0m
+[0m2025-06-19 12:10:02,345 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN123771 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24750.0-PE, Side:BUY, Qty: 1200[0m
+[0m2025-06-19 12:10:02,346 - INFO     - [8624] - MainThread - root - main:main - 341: user_id: FN123771 - Running Put Position for SENSEX not taking new entry.[0m
+[0m2025-06-19 12:10:02,347 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81600.0-CE da6ec22d210f486999170115f6e6b942 is CANCELLED[0m
+[0m2025-06-19 12:10:02,348 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN123771 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81600.0-CE): High=434.8, Entry=465.25, Qty=40[0m
+[0m2025-06-19 12:10:02,350 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN123771 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81600.0-CE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 12:10:02,351 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 12:48:00 =========[0m
+[0m2025-06-19 12:48:00,608 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 12:48:00,608 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24850.0-CE 9854e69755ba4b229bac44c387fda1a0 is CANCELLED[0m
+[0m2025-06-19 12:48:00,609 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24750.0-PE e7ab6561896345cf8fc5b1796b0e749e is CANCELLED[0m
+[0m2025-06-19 12:48:01,525 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FMN939 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24850.0-CE): High=12.45, Entry=13.95, Qty=2850[0m
+[0m2025-06-19 12:48:01,526 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FMN939 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24850.0-CE, Side:BUY, Qty: 2850[0m
+[0m2025-06-19 12:48:01,527 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FMN939 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24750.0-PE): High=15.3, Entry=17.15, Qty=2325[0m
+[0m2025-06-19 12:48:01,528 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FMN939 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24750.0-PE, Side:BUY, Qty: 2325[0m
+[0m2025-06-19 12:48:01,530 - INFO     - [8624] - MainThread - root - main:main - 341: user_id: FMN939 - Running Put Position for SENSEX not taking new entry.[0m
+[0m2025-06-19 12:48:01,532 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81600.0-CE 34abb57f489647cc9e036f4fd5f57dcd is CANCELLED[0m
+[0m2025-06-19 12:48:02,628 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FMN939 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81600.0-CE): High=430, Entry=460.1, Qty=80[0m
+[0m2025-06-19 12:48:02,628 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FMN939 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81600.0-CE, Side:BUY, Qty: 80[0m
+[0m2025-06-19 12:48:02,629 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 13:26:00 =========[0m
+[0m2025-06-19 12:48:02,629 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 12:48:02,629 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24850.0-CE 71e9f67092574c84853fa888bbefab82 is CANCELLED[0m
+[0m2025-06-19 12:48:02,630 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24750.0-PE fdfbb19da29d423eae29bc2cf5a5db2b is CANCELLED[0m
+[0m2025-06-19 12:48:02,630 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN112899 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24850.0-CE): High=12.45, Entry=13.95, Qty=1425[0m
+[0m2025-06-19 12:48:02,630 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN112899 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24850.0-CE, Side:BUY, Qty: 1425[0m
+[0m2025-06-19 12:48:02,630 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN112899 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24750.0-PE): High=15.3, Entry=17.15, Qty=1125[0m
+[0m2025-06-19 12:48:02,631 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN112899 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24750.0-PE, Side:BUY, Qty: 1125[0m
+[0m2025-06-19 12:48:02,631 - INFO     - [8624] - MainThread - root - main:main - 341: user_id: FN112899 - Running Put Position for SENSEX not taking new entry.[0m
+[0m2025-06-19 12:48:02,631 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81600.0-CE 00aa4a750c8941deb1c9fdc20af4dcda is CANCELLED[0m
+[0m2025-06-19 12:48:02,632 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN112899 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81600.0-CE): High=430, Entry=460.1, Qty=40[0m
+[0m2025-06-19 12:48:02,632 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN112899 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81600.0-CE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 12:48:02,632 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 13:26:00 =========[0m
+[0m2025-06-19 12:48:02,633 - INFO     - [8624] - MainThread - root - main:main - 308: ==============================================[0m
+[0m2025-06-19 12:48:02,634 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24850.0-CE d6657a5e2c0145c9b00b8d0ac41b35e6 is CANCELLED[0m
+[0m2025-06-19 12:48:02,634 - INFO     - [8624] - MainThread - root - main:main - 332: NFO-NIFTY-OPTIDX-250619-24750.0-PE 3a3e99538f8d4f5b98bbc8824f2a78c1 is CANCELLED[0m
+[0m2025-06-19 12:48:02,635 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN123771 - NIFTY: CE(NFO-NIFTY-OPTIDX-250619-24850.0-CE): High=12.45, Entry=13.95, Qty=1425[0m
+[0m2025-06-19 12:48:02,635 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN123771 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24850.0-CE, Side:BUY, Qty: 1425[0m
+[0m2025-06-19 12:48:02,635 - INFO     - [8624] - MainThread - root - main:main - 441: user_id: FN123771 - NIFTY: PE(NFO-NIFTY-OPTIDX-250619-24750.0-PE): High=15.3, Entry=17.15, Qty=1125[0m
+[0m2025-06-19 12:48:02,636 - INFO     - [8624] - MainThread - root - main:main - 467: user_id: FN123771 - Trigger order placed for: NFO-NIFTY-OPTIDX-250619-24750.0-PE, Side:BUY, Qty: 1125[0m
+[0m2025-06-19 12:48:02,636 - INFO     - [8624] - MainThread - root - main:main - 341: user_id: FN123771 - Running Put Position for SENSEX not taking new entry.[0m
+[0m2025-06-19 12:48:02,636 - INFO     - [8624] - MainThread - root - main:main - 332: BFO-SENSEX-OPTIDX-250624-81600.0-CE 68fed03e03c04c448b3ce2cfe1df87fd is CANCELLED[0m
+[0m2025-06-19 12:48:02,637 - INFO     - [8624] - MainThread - root - main:main - 412: user_id: FN123771 - SENSEX: CE(BFO-SENSEX-OPTIDX-250624-81600.0-CE): High=430, Entry=460.1, Qty=40[0m
+[0m2025-06-19 12:48:02,638 - INFO     - [8624] - MainThread - root - main:main - 438: user_id: FN123771 - Trigger order placed for: BFO-SENSEX-OPTIDX-250624-81600.0-CE, Side:BUY, Qty: 40[0m
+[0m2025-06-19 12:48:02,638 - INFO     - [8624] - MainThread - root - main:main - 469: ========= Next check-time: 13:26:00 =========[0m

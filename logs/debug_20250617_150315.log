@@ -1,0 +1,146 @@
+[0m2025-06-17 15:03:15,693 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): public.fyers.in:443[0m
+[0m2025-06-17 15:03:16,067 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://public.fyers.in:443 "GET /sym_details/NSE_FO_sym_master.json HTTP/1.1" 200 None[0m
+[0m2025-06-17 15:03:17,901 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): public.fyers.in:443[0m
+[0m2025-06-17 15:03:18,192 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://public.fyers.in:443 "GET /sym_details/BSE_FO_sym_master.json HTTP/1.1" 200 None[0m
+[0m2025-06-17 15:03:18,369 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): growwapi-assets.groww.in:443[0m
+[0m2025-06-17 15:03:18,545 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://growwapi-assets.groww.in:443 "GET /instruments/instrument.csv HTTP/1.1" 200 12497762[0m
+[0m2025-06-17 15:03:23,822 - DEBUG    - [22308] - MainThread - root - main:main - 244: {'pricefeed_creds': {'user_id': 'EO7101', 'password': 'kgb1983$', 'totp_secret': '663MSRZANPUFJDKOMCET5CMKQXXAHML7', 'api_key': '9letgq0m9fo92an3', 'api_secret': 'bs6u1u02mp47lzb12qm6802lx7s4pi7n'}, 'api': [{'provider': 'zerodha', 'fund_allocations': {'nifty': 15000, 'sensex': 20000}, 'creds': {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': '', 'api_secret': ''}}, {'provider': 'GoPocket', 'fund_allocations': {'nifty': 0, 'sensex': 0}, 'creds': {'user_id': '', 'user_phone': '', 'app_code': '', 'app_secret': '', 'totp_secret': '', 'password': ''}}, {'provider': 'shoonya', 'fund_allocations': {'nifty': 20000, 'sensex': 20000}, 'creds': {'user_id': 'FN112899', 'api_key': 'aff71287f2faaaf125c28612c52814f8', 'password': 'Vanitha@@143', 'totp_secret': 'HL4U327A2A6I6677H355H4LZ44JH2J5N'}}, {'provider': 'shoonya', 'fund_allocations': {'nifty': 40000, 'sensex': 40000}, 'creds': {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}}, {'provider': 'shoonya', 'fund_allocations': {'nifty': 20000, 'sensex': 20000}, 'creds': {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}}, {'provider': 'shoonya', 'fund_allocations': {'nifty': 30000, 'sensex': 30000}, 'creds': {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}}, {'provider': 'shoonya', 'fund_allocations': {'nifty': 75000, 'sensex': 75000}, 'creds': {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}}, {'provider': 'shoonya', 'fund_allocations': {'nifty': 40000, 'sensex': 40000}, 'creds': {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}}, {'provider': 'shoonya', 'fund_allocations': {'nifty': 40000, 'sensex': 40000}, 'creds': {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}}, {'provider': 'groww', 'fund_allocations': {'banknifty': 15000, 'bankex': 20000}, 'creds': {'user_id': '', 'api_key': ''}}], 'strategy': {'strategy_end_time': '15:15:00', 'check_candle': 38, 'buffer_price_percentage': 2, 'strike_buffer_precentage': 0.15, 'stop_loss': 30, 'profit_target': 60, 'trailings': [{'profit_move': 25, 'stop_loss_move': 1}, {'profit_move': 40, 'stop_loss_move': 1.25}, {'profit_move': 49, 'stop_loss_move': 1.4}], 'fund_allocations': {'banknifty': 15000, 'bankex': 20000}}}[0m
+[0m2025-06-17 15:03:23,838 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): kite.zerodha.com:443[0m
+[0m2025-06-17 15:03:24,017 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://kite.zerodha.com:443 "POST /api/login HTTP/1.1" 200 None[0m
+[0m2025-06-17 15:03:24,079 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://kite.zerodha.com:443 "POST /api/twofa HTTP/1.1" 200 42[0m
+[0m2025-06-17 15:03:24,125 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://kite.zerodha.com:443 "GET /connect/login?v=3&api_key=9letgq0m9fo92an3 HTTP/1.1" 302 0[0m
+[0m2025-06-17 15:03:24,176 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://kite.zerodha.com:443 "GET /connect/finish?api_key=9letgq0m9fo92an3&sess_id=SgmeALhgsEs5sgQ5TYw0bn8f2qS346bW HTTP/1.1" 302 0[0m
+[0m2025-06-17 15:03:24,176 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.kite.trade:443[0m
+[0m2025-06-17 15:03:24,358 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.kite.trade:443 "POST /session/token HTTP/1.1" 200 None[0m
+[0m2025-06-17 15:03:24,374 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): kite.zerodha.com:443[0m
+[0m2025-06-17 15:03:24,507 - INFO     - [22308] - Thread-1 (run) - pricefeed - pricefeed:on_connect - 45: Feed connected successfully.[0m
+[0m2025-06-17 15:03:24,515 - INFO     - [22308] - Thread-1 (run) - pricefeed - pricefeed:subscribe - 82: Succesfully subscribed 3730 tokens.[0m
+[0m2025-06-17 15:03:24,515 - INFO     - [22308] - Thread-1 (run) - pricefeed - pricefeed:on_connect - 52: pricefeed connected, <kiteconnect.ticker.KiteTicker object at 0x000001658795B020>[0m
+[0m2025-06-17 15:03:24,562 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://kite.zerodha.com:443 "POST /api/login HTTP/1.1" 400 90[0m
+[1;41m2025-06-17 15:03:24,562 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in ZERODHA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': '', 'api_secret': ''}[0m
+[0m2025-06-17 15:03:24,562 - DEBUG    - [22308] - MainThread - root - main:main - 280: Error while login in ZERODHA
+Traceback (most recent call last):
+  File "E:\Multiple User On Thread\main.py", line 261, in main
+    zerodha_login(strategy.api)
+  File "E:\Multiple User On Thread\oms.py", line 140, in zerodha_login
+    raise Exception(
+Exception: Error while logging in to kite for user-, Error: {"status":"error","message":"Invalid username.","data":null,"error_type":"InputException"}[0m
+[0m2025-06-17 15:03:24,583 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): web.gopocket.in:443[0m
+[0m2025-06-17 15:03:27,205 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://web.gopocket.in:443 "POST /am/access/client/verify HTTP/1.1" 200 None[0m
+[1;41m2025-06-17 15:03:27,205 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in GOPOCKET, config: {'user_id': '', 'user_phone': '', 'app_code': '', 'app_secret': '', 'totp_secret': '', 'password': ''}[0m
+[0m2025-06-17 15:03:27,205 - DEBUG    - [22308] - MainThread - root - main:main - 280: Error while login in GOPOCKET
+Traceback (most recent call last):
+  File "E:\Multiple User On Thread\main.py", line 273, in main
+    gopocket_login(strategy.api)
+  File "E:\Multiple User On Thread\oms.py", line 286, in gopocket_login
+    raise Exception(user_id_response.text)
+Exception: {"status":"Not ok","message":"Invalid Parameter","result":[]}[0m
+[0m2025-06-17 15:03:27,205 - DEBUG    - [22308] - MainThread - oms - oms:shoonya_login - 219: Shoonya login payload: jData={"apkversion": "1.0.0", "uid": "FN112899", "pwd": "29ad2d49d56407bc0ed86af8d0c6d34b6cf8ec71918554ded81d5d311f7a2f2c", "factor2": "878426", "vc": "FN112899_U", "appkey": "fa37482711d00d8f2134695eea8941ede3013550c53fcfa4b764c815a288e319", "imei": "abc1234", "source": "API"}[0m
+[0m2025-06-17 15:03:27,205 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443[0m
+[0m2025-06-17 15:03:28,417 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/QuickAuth HTTP/1.1" 200 4992[0m
+[0m2025-06-17 15:03:28,418 - DEBUG    - [22308] - MainThread - oms - oms:shoonya_login - 221: Shoonya login response: {"request_time":"15:03:28 17-06-2025","actid":"FN112899","access_type":["WEB","MOB","TT","API"],"uname":"Vinod Batta","prarr":[{"prd":"C","s_prdt_ali":"CNC","exch":["NSE","BSE","NIPO","BSTAR"]},{"prd":"M","s_prdt_ali":"NRML","exch":["NFO","BFO"]},{"prd":"I","s_prdt_ali":"MIS","exch":["NSE","BSE","NFO","BFO"]},{"prd":"H","s_prdt_ali":"CO","exch":["NSE","NFO","BSE"]},{"prd":"B","s_prdt_ali":"BO","exch":["NSE","NFO","BSE"]}],"exch_prd":[{"exch":"NSE","prds":["C","I","H","B"]},{"exch":"NIPO","prds":["C"]},{"exch":"BSE","prds":["C","I","H","B"]},{"exch":"BSTAR","prds":["C"]},{"exch":"NFO","prds":["M","I","H","B"]},{"exch":"BFO","prds":["M","I"]}],"stat":"Ok","susertoken":"37e2efbfdd754ab9b319b85a001bf6a560588b322bce62cdb33b07fc767f22dc","susertokenspl":"5ba248a617c1701ce2e30592982b9b89724cabba8d80e26850c193f8837b0217","email":"bhatta.vinod.b@gmail.com","uid":"FN112899","brnchid":"HO","totp_set":"1","m_num":"9030630427","orarr":["MKT","LMT","SL-LMT","SL-MKT"],"exarr":["NSE","NIPO","BSE","BSTAR","NFO","BFO"],"values":["1"],"mws":{"1":[{"exch":"NFO","token":"69056","tsym":"ASIANPAINT26JUN25P2320","cname":"ASIANPAINT JUN 2320 PE ","dname":"ASIANPAINT JUN 2320 PE ","instname":"OPTSTK","pp":"2","ls":"200","ti":"0.05","optt":"PE"},{"exch":"NFO","token":"104643","tsym":"INDIGO26JUN25P5400","cname":"INDIGO JUN 5400 PE ","dname":"INDIGO JUN 5400 PE ","instname":"OPTSTK","pp":"2","ls":"150","ti":"0.05","optt":"PE"},{"exch":"BFO","token":"1140471","tsym":"SENSEX2561781800PE","weekly":"W3","instname":"OPTIDX","pp":"2","ls":"20","ti":"0.05","optt":"PE"},{"exch":"NFO","token":"133757","tsym":"ULTRACEMCO26JUN25P11700","cname":"ULTRACEMCO JUN 11700 PE ","dname":"ULTRACEMCO JUN 11700 PE ","instname":"OPTSTK","pp":"2","ls":"50","ti":"0.05","optt":"PE"},{"exch":"BFO","token":"1140370","tsym":"SENSEX2561781600PE","weekly":"W3","instname":"OPTIDX","pp":"2","ls":"20","ti":"0.05","optt":"PE"},{"exch":"NFO","token":"50937","tsym":"MCX26JUN25C7800","cname":"MCX JUN 7800 CE ","dname":"MCX JUN 7800 CE ","instname":"OPTSTK","pp":"2","ls":"100","ti":"0.05","optt":"CE"},{"exch":"NFO","token":"101261","tsym":"INDHOTEL26JUN25C710","cname":"INDHOTEL JUN 710 CE ","dname":"INDHOTEL JUN 710 CE ","instname":"OPTSTK","pp":"2","ls":"1000","ti":"0.05","optt":"CE"},{"exch":"NFO","token":"51000","tsym":"NIFTY19JUN25P24750","weekly":"W3","cname":"NIFTY 19JUN25 24750 PE ","dname":"NIFTY 19JUN25 24750 PE ","instname":"OPTIDX","pp":"2","ls":"75","ti":"0.05","optt":"PE"},{"exch":"NFO","token":"62386","tsym":"NIFTY26JUN25P24750","cname":"NIFTY 26JUN25 24750 PE ","dname":"NIFTY 26JUN25 24750 PE ","instname":"OPTIDX","pp":"2","ls":"75","ti":"0.05","optt":"PE"},{"exch":"BFO","token":"1141039","tsym":"SENSEX2561781200PE","weekly":"W3","instname":"OPTIDX","pp":"2","ls":"20","ti":"0.05","optt":"PE"},{"exch":"NFO","token":"51002","tsym":"NIFTY19JUN25P24800","weekly":"W3","cname":"NIFTY 19JUN25 24800 PE ","dname":"NIFTY 19JUN25 24800 PE ","instname":"OPTIDX","pp":"2","ls":"75","ti":"0.05","optt":"PE"},{"exch":"BFO","token":"1140705","tsym":"SENSEX2561781200CE","weekly":"W3","instname":"OPTIDX","pp":"2","ls":"20","ti":"0.05","optt":"CE"},{"exch":"BFO","token":"1140942","tsym":"SENSEX2561781000PE","weekly":"W3","instname":"OPTIDX","pp":"2","ls":"20","ti":"0.05","optt":"PE"},{"exch":"BFO","token":"1140606","tsym":"SENSEX2561781000CE","weekly":"W3","instname":"OPTIDX","pp":"2","ls":"20","ti":"0.05","optt":"CE"},{"exch":"NFO","token":"50990","tsym":"NIFTY19JUN25P24500","weekly":"W3","cname":"NIFTY 19JUN25 24500 PE ","dname":"NIFTY 19JUN25 24500 PE ","instname":"OPTIDX","pp":"2","ls":"75","ti":"0.05","optt":"PE"},{"exch":"NFO","token":"50989","tsym":"NIFTY19JUN25C24500","weekly":"W3","cname":"NIFTY 19JUN25 24500 CE ","dname":"NIFTY 19JUN25 24500 CE ","instname":"OPTIDX","pp":"2","ls":"75","ti":"0.05","optt":"CE"},{"exch":"NFO","token":"139789","tsym":"SRF26JUN25C3100","cname":"SRF JUN 3100 CE ","dname":"SRF JUN 3100 CE ","instname":"OPTSTK","pp":"2","ls":"375","ti":"0.05","optt":"CE"},{"exch":"BFO","token":"1140105","tsym":"SENSEX2561782500PE","weekly":"W3","instname":"OPTIDX","pp":"2","ls":"20","ti":"0.05","optt":"PE"},{"exch":"BFO","token":"1141343","tsym":"SENSEX2561782500CE","weekly":"W3","instname":"OPTIDX","pp":"2","ls":"20","ti":"0.05","optt":"CE"},{"exch":"NFO","token":"118437","tsym":"MAZDOCK26JUN25P3400","cname":"MAZDOCK JUN 3400 PE ","dname":"MAZDOCK JUN 3400 PE ","instname":"OPTSTK","pp":"2","ls":"175","ti":"0.05","optt":"PE"},{"exch":"NFO","token":"112150","tsym":"M&M26JUN25C3050","cname":"M&M JUN 3050 CE ","dname":"M&M JUN 3050 CE ","instname":"OPTSTK","pp":"2","ls":"175","ti":"0.05","optt":"CE"},{"exch":"BFO","token":"1141193","tsym":"SENSEX2561782400PE","weekly":"W3","instname":"OPTIDX","pp":"2","ls":"20","ti":"0.05","optt":"PE"},{"exch":"BFO","token":"1140167","tsym":"SENSEX2561782400CE","weekly":"W3","instname":"OPTIDX","pp":"2","ls":"20","ti":"0.05","optt":"CE"}]},"brkname":"FINV","dmsg":"","lastaccesstime":"1750152808","lastpwdtime":"1749612427"}[0m
+[0m2025-06-17 15:03:28,418 - INFO     - [22308] - MainThread - oms - oms:shoonya_login - 224: Shoonya: FN112899 loggedin successfully.[0m
+[0m2025-06-17 15:03:28,420 - DEBUG    - [22308] - MainThread - oms - oms:shoonya_login - 219: Shoonya login payload: jData={"apkversion": "1.0.0", "uid": "", "pwd": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "factor2": "691543", "vc": "_U", "appkey": "cbe5cfdf7c2118a9c3d78ef1d684f3afa089201352886449a06a6511cfef74a7", "imei": "abc1234", "source": "API"}[0m
+[0m2025-06-17 15:03:28,421 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443[0m
+[0m2025-06-17 15:03:28,604 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/QuickAuth HTTP/1.1" 400 63[0m
+[0m2025-06-17 15:03:28,620 - DEBUG    - [22308] - MainThread - oms - oms:shoonya_login - 221: Shoonya login response: {"stat":"Not_Ok","emsg":"Invalid Input :  Invalid Vendor code"}[0m
+[1;41m2025-06-17 15:03:28,620 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[0m2025-06-17 15:03:28,620 - DEBUG    - [22308] - MainThread - root - main:main - 280: Error while login in SHOONYA
+Traceback (most recent call last):
+  File "E:\Multiple User On Thread\main.py", line 264, in main
+    shoonya_login(strategy.api)
+  File "E:\Multiple User On Thread\oms.py", line 226, in shoonya_login
+    raise Exception("Not Ok")
+Exception: Not Ok[0m
+[0m2025-06-17 15:03:28,623 - DEBUG    - [22308] - MainThread - oms - oms:shoonya_login - 219: Shoonya login payload: jData={"apkversion": "1.0.0", "uid": "", "pwd": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "factor2": "691543", "vc": "_U", "appkey": "cbe5cfdf7c2118a9c3d78ef1d684f3afa089201352886449a06a6511cfef74a7", "imei": "abc1234", "source": "API"}[0m
+[0m2025-06-17 15:03:28,625 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443[0m
+[0m2025-06-17 15:03:28,829 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/QuickAuth HTTP/1.1" 400 63[0m
+[0m2025-06-17 15:03:28,829 - DEBUG    - [22308] - MainThread - oms - oms:shoonya_login - 221: Shoonya login response: {"stat":"Not_Ok","emsg":"Invalid Input :  Invalid Vendor code"}[0m
+[1;41m2025-06-17 15:03:28,829 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[0m2025-06-17 15:03:28,829 - DEBUG    - [22308] - MainThread - root - main:main - 280: Error while login in SHOONYA
+Traceback (most recent call last):
+  File "E:\Multiple User On Thread\main.py", line 264, in main
+    shoonya_login(strategy.api)
+  File "E:\Multiple User On Thread\oms.py", line 226, in shoonya_login
+    raise Exception("Not Ok")
+Exception: Not Ok[0m
+[0m2025-06-17 15:03:28,829 - DEBUG    - [22308] - MainThread - oms - oms:shoonya_login - 219: Shoonya login payload: jData={"apkversion": "1.0.0", "uid": "", "pwd": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "factor2": "691543", "vc": "_U", "appkey": "cbe5cfdf7c2118a9c3d78ef1d684f3afa089201352886449a06a6511cfef74a7", "imei": "abc1234", "source": "API"}[0m
+[0m2025-06-17 15:03:28,829 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443[0m
+[0m2025-06-17 15:03:29,022 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/QuickAuth HTTP/1.1" 400 63[0m
+[0m2025-06-17 15:03:29,022 - DEBUG    - [22308] - MainThread - oms - oms:shoonya_login - 221: Shoonya login response: {"stat":"Not_Ok","emsg":"Invalid Input :  Invalid Vendor code"}[0m
+[1;41m2025-06-17 15:03:29,022 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[0m2025-06-17 15:03:29,023 - DEBUG    - [22308] - MainThread - root - main:main - 280: Error while login in SHOONYA
+Traceback (most recent call last):
+  File "E:\Multiple User On Thread\main.py", line 264, in main
+    shoonya_login(strategy.api)
+  File "E:\Multiple User On Thread\oms.py", line 226, in shoonya_login
+    raise Exception("Not Ok")
+Exception: Not Ok[0m
+[0m2025-06-17 15:03:29,024 - DEBUG    - [22308] - MainThread - oms - oms:shoonya_login - 219: Shoonya login payload: jData={"apkversion": "1.0.0", "uid": "", "pwd": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "factor2": "691543", "vc": "_U", "appkey": "cbe5cfdf7c2118a9c3d78ef1d684f3afa089201352886449a06a6511cfef74a7", "imei": "abc1234", "source": "API"}[0m
+[0m2025-06-17 15:03:29,025 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443[0m
+[0m2025-06-17 15:03:29,219 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/QuickAuth HTTP/1.1" 400 63[0m
+[0m2025-06-17 15:03:29,219 - DEBUG    - [22308] - MainThread - oms - oms:shoonya_login - 221: Shoonya login response: {"stat":"Not_Ok","emsg":"Invalid Input :  Invalid Vendor code"}[0m
+[1;41m2025-06-17 15:03:29,219 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[0m2025-06-17 15:03:29,220 - DEBUG    - [22308] - MainThread - root - main:main - 280: Error while login in SHOONYA
+Traceback (most recent call last):
+  File "E:\Multiple User On Thread\main.py", line 264, in main
+    shoonya_login(strategy.api)
+  File "E:\Multiple User On Thread\oms.py", line 226, in shoonya_login
+    raise Exception("Not Ok")
+Exception: Not Ok[0m
+[0m2025-06-17 15:03:29,221 - DEBUG    - [22308] - MainThread - oms - oms:shoonya_login - 219: Shoonya login payload: jData={"apkversion": "1.0.0", "uid": "", "pwd": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "factor2": "691543", "vc": "_U", "appkey": "cbe5cfdf7c2118a9c3d78ef1d684f3afa089201352886449a06a6511cfef74a7", "imei": "abc1234", "source": "API"}[0m
+[0m2025-06-17 15:03:29,222 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443[0m
+[0m2025-06-17 15:03:29,416 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/QuickAuth HTTP/1.1" 400 63[0m
+[0m2025-06-17 15:03:29,416 - DEBUG    - [22308] - MainThread - oms - oms:shoonya_login - 221: Shoonya login response: {"stat":"Not_Ok","emsg":"Invalid Input :  Invalid Vendor code"}[0m
+[1;41m2025-06-17 15:03:29,417 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[0m2025-06-17 15:03:29,417 - DEBUG    - [22308] - MainThread - root - main:main - 280: Error while login in SHOONYA
+Traceback (most recent call last):
+  File "E:\Multiple User On Thread\main.py", line 264, in main
+    shoonya_login(strategy.api)
+  File "E:\Multiple User On Thread\oms.py", line 226, in shoonya_login
+    raise Exception("Not Ok")
+Exception: Not Ok[0m
+[0m2025-06-17 15:03:29,419 - DEBUG    - [22308] - MainThread - oms - oms:shoonya_login - 219: Shoonya login payload: jData={"apkversion": "1.0.0", "uid": "", "pwd": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "factor2": "691543", "vc": "_U", "appkey": "cbe5cfdf7c2118a9c3d78ef1d684f3afa089201352886449a06a6511cfef74a7", "imei": "abc1234", "source": "API"}[0m
+[0m2025-06-17 15:03:29,420 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443[0m
+[0m2025-06-17 15:03:29,607 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/QuickAuth HTTP/1.1" 400 63[0m
+[0m2025-06-17 15:03:29,607 - DEBUG    - [22308] - MainThread - oms - oms:shoonya_login - 221: Shoonya login response: {"stat":"Not_Ok","emsg":"Invalid Input :  Invalid Vendor code"}[0m
+[1;41m2025-06-17 15:03:29,607 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in SHOONYA, config: {'user_id': '', 'api_key': '', 'password': '', 'totp_secret': ''}[0m
+[0m2025-06-17 15:03:29,607 - DEBUG    - [22308] - MainThread - root - main:main - 280: Error while login in SHOONYA
+Traceback (most recent call last):
+  File "E:\Multiple User On Thread\main.py", line 264, in main
+    shoonya_login(strategy.api)
+  File "E:\Multiple User On Thread\oms.py", line 226, in shoonya_login
+    raise Exception("Not Ok")
+Exception: Not Ok[0m
+[0m2025-06-17 15:03:29,607 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.groww.in:443[0m
+[0m2025-06-17 15:03:29,841 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.groww.in:443 "GET /v1/order/list HTTP/1.1" 401 97[0m
+[1;41m2025-06-17 15:03:29,841 - CRITICAL - [22308] - MainThread - root - main:main - 279: Error while login in GROWW, config: {'user_id': '', 'api_key': ''}[0m
+[0m2025-06-17 15:03:29,841 - DEBUG    - [22308] - MainThread - root - main:main - 280: Error while login in GROWW
+Traceback (most recent call last):
+  File "E:\Multiple User On Thread\main.py", line 270, in main
+    groww_login(strategy.api)
+  File "E:\Multiple User On Thread\oms.py", line 264, in groww_login
+    groww_get_orderbook(api)
+  File "E:\Multiple User On Thread\oms.py", line 680, in groww_get_orderbook
+    raise Exception(error_message)
+Exception: {"status":"FAILURE","error":{"code":"401","message":"Missing token in request.","metadata":null}}[0m
+[0m2025-06-17 15:03:29,859 - INFO     - [22308] - MainThread - root - main:main - 285: ========= Next check-time: 15:20:00 =========[0m
+[0m2025-06-17 15:03:29,859 - DEBUG    - [22308] - MainThread - oms - oms:finvasia_get_orderbook - 472: Payload: jData= {"uid": "FN112899"}&jKey=37e2efbfdd754ab9b319b85a001bf6a560588b322bce62cdb33b07fc767f22dc[0m
+[0m2025-06-17 15:03:29,861 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443[0m
+[0m2025-06-17 15:03:30,057 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 6861[0m
+[0m2025-06-17 15:03:35,273 - DEBUG    - [22308] - MainThread - oms - oms:finvasia_get_orderbook - 472: Payload: jData= {"uid": "FN112899"}&jKey=37e2efbfdd754ab9b319b85a001bf6a560588b322bce62cdb33b07fc767f22dc[0m
+[0m2025-06-17 15:03:35,273 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443[0m
+[0m2025-06-17 15:03:35,473 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 6861[0m
+[0m2025-06-17 15:03:40,509 - DEBUG    - [22308] - MainThread - oms - oms:finvasia_get_orderbook - 472: Payload: jData= {"uid": "FN112899"}&jKey=37e2efbfdd754ab9b319b85a001bf6a560588b322bce62cdb33b07fc767f22dc[0m
+[0m2025-06-17 15:03:40,509 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443[0m
+[0m2025-06-17 15:03:40,751 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 6861[0m
+[0m2025-06-17 15:03:45,768 - DEBUG    - [22308] - MainThread - oms - oms:finvasia_get_orderbook - 472: Payload: jData= {"uid": "FN112899"}&jKey=37e2efbfdd754ab9b319b85a001bf6a560588b322bce62cdb33b07fc767f22dc[0m
+[0m2025-06-17 15:03:45,768 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443[0m
+[0m2025-06-17 15:03:45,992 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 6861[0m
+[0m2025-06-17 15:03:51,017 - DEBUG    - [22308] - MainThread - oms - oms:finvasia_get_orderbook - 472: Payload: jData= {"uid": "FN112899"}&jKey=37e2efbfdd754ab9b319b85a001bf6a560588b322bce62cdb33b07fc767f22dc[0m
+[0m2025-06-17 15:03:51,017 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443[0m
+[0m2025-06-17 15:03:51,224 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 6861[0m
+[0m2025-06-17 15:03:56,269 - DEBUG    - [22308] - MainThread - oms - oms:finvasia_get_orderbook - 472: Payload: jData= {"uid": "FN112899"}&jKey=37e2efbfdd754ab9b319b85a001bf6a560588b322bce62cdb33b07fc767f22dc[0m
+[0m2025-06-17 15:03:56,269 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_new_conn - 1049: Starting new HTTPS connection (1): api.shoonya.com:443[0m
+[0m2025-06-17 15:03:56,486 - DEBUG    - [22308] - MainThread - urllib3.connectionpool - connectionpool:_make_request - 544: https://api.shoonya.com:443 "POST /NorenWClientTP/OrderBook HTTP/1.1" 200 6861[0m
+[93m2025-06-17 15:04:00,271 - WARNING  - [22308] - MainThread - root - main:main - 587: Keyboard Interrupt[0m

@@ -19,6 +19,7 @@ app = Flask(__name__)
 CORS(app)
 TABLE_NAME = "ConfigTable"
 USERS_TABLE_NAME = "Users"
+LOGIN_TABLE = "Login"
 
 # User Management Functions
 def hash_password(password):
@@ -45,13 +46,13 @@ def validate_user_data(data, is_update=False):
 def verify_user(username, password):
     """Verify user credentials against database"""
     try:
-        table = get_dynamo_table(USERS_TABLE_NAME)
+        table = get_dynamo_table(LOGIN_TABLE)
         
         # Hash the provided password to compare
-        hashed_password = hash_password(password)
+        hashed_password = password
         
         # Get user by username (assuming username is stored as user_id or separate field)
-        response = table.get_item(Key={'user_id': username})
+        response = table.get_item(Key={'LoginId': username})
         
         if 'Item' not in response:
             return False, None

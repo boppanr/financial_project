@@ -1,0 +1,3 @@
+[0m2025-06-28 15:36:55,072 - INFO     - [38489] - MainThread - botocore.credentials - credentials:load - 1352: Found credentials in shared credentials file: ~/.aws/credentials[0m
+[93m2025-06-28 15:36:55,125 - WARNING  - [38489] - MainThread - werkzeug - _internal:_log - 97:  * Debugger is active![0m
+[0m2025-06-28 15:36:55,131 - INFO     - [38489] - MainThread - werkzeug - _internal:_log - 97:  * Debugger PIN: 131-715-330[0m

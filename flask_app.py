@@ -779,9 +779,8 @@ def get_config_by_details():
     customer_name = request.args.get('customer_name')
     provider = request.args.get('provider')
     userid = request.args.get('userid')
-    executionDay = request.args.get('execution_day')
-
-    if not all([customer_name, provider, userid, executionDay]):
+    
+    if not all([customer_name, provider, userid]):
         return jsonify({"error": "Missing required query parameters"}), 400
 
     try:
@@ -790,8 +789,7 @@ def get_config_by_details():
         # Scan only records where is_deleted is not true (either missing or False)
         response = table.scan(
             FilterExpression=(
-                (Attr('is_deleted').not_exists() | Attr('is_deleted').eq(False)) &
-                (Attr('schedule.execution_days').exists() & Attr('schedule.execution_days').eq(executionDay))
+                (Attr('is_deleted').not_exists() | Attr('is_deleted').eq(False))
             )
         )
 
@@ -832,7 +830,6 @@ def get_config_by_details():
                         'risk_management': item.get('risk_management', {}),
                         'execution_settings': item.get('execution_settings', {}),
                         'notifications': item.get('notifications', {}),
-                        'schedule': item.get('schedule', {}),
                         'is_running': item.get('is_running', False),
                         # Include any other fields that might be relevant
                         'full_config': {k: v for k, v in item.items() if k not in ['api']}
@@ -989,8 +986,7 @@ def exit_all_positions_and_orders():
         # Fetch all active user-provider configurations
         response = table.scan(
             FilterExpression=(
-                (Attr('is_deleted').not_exists() | Attr('is_deleted').eq(False)) &
-                (Attr('schedule.execution_days').exists() & Attr('schedule.execution_days').eq(today))
+                (Attr('is_deleted').not_exists() | Attr('is_deleted').eq(False)) 
             )
         )
         
@@ -1051,8 +1047,7 @@ def restart_all_users():
         # Fetch all active user-provider configurations
         response = table.scan(
             FilterExpression=(
-                (Attr('is_deleted').not_exists() | Attr('is_deleted').eq(False)) &
-                (Attr('schedule.execution_days').exists() & Attr('schedule.execution_days').eq(today))
+                (Attr('is_deleted').not_exists() | Attr('is_deleted').eq(False))
             )
         )
 
@@ -1385,4 +1380,4 @@ def get_all_execution_days():
         }), 500
     
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5001, debug=True)

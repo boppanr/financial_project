@@ -1208,18 +1208,18 @@ def signup():
     status = 201 if success else 409
     return jsonify({'message': msg}), status
 
-@app.route('/api/get_configs_by_execution_day', methods=['GET'])
+@app.route('/api/get_configs', methods=['GET'])
 def get_configs_by_execution_day():
     """Get all configuration JSONs based on target execution day"""
     try:
         # Get the target execution day from query parameters
-        target_day = request.args.get('target_day')
+        # target_day = request.args.get('target_day')
         
-        if not target_day:
-            return jsonify({
-                'success': False,
-                'error': 'target_day parameter is required'
-            }), 400
+     #   if not target_day:
+      #      return jsonify({
+      #          'success': False,
+      #          'error': 'target_day parameter is required'
+      #      }), 400
         
         table = get_dynamo_table(TABLE_NAME)
         
@@ -1231,28 +1231,27 @@ def get_configs_by_execution_day():
         )
         
         configs = response.get('Items', [])
-        matching_configs = []
+        # matching_configs = []
         
-        for config in configs:
-            # Check if schedule exists and has execution days
-            schedule = config.get('schedule', {})
-            execution_days = schedule.get('execution_days', [])
+        # for config in configs:
+        #     # Check if schedule exists and has execution days
+        #     schedule = config.get('schedule', {})
+        #     execution_days = schedule.get('execution_days', [])
             
-            # Handle different formats of execution days
-            if isinstance(execution_days, list):
-                # Check if target_day is in the list (case-insensitive)
-                if any(day.lower() == target_day.lower() for day in execution_days if isinstance(day, str)):
-                    matching_configs.append(config)
-            elif isinstance(execution_days, str):
-                # If execution_days is a single string
-                if execution_days.lower() == target_day.lower():
-                    matching_configs.append(config)
+        #     # Handle different formats of execution days
+        #     if isinstance(execution_days, list):
+        #         # Check if target_day is in the list (case-insensitive)
+        #         if any(day.lower() == target_day.lower() for day in execution_days if isinstance(day, str)):
+        #             matching_configs.append(config)
+        #     elif isinstance(execution_days, str):
+        #         # If execution_days is a single string
+        #         if execution_days.lower() == target_day.lower():
+        #             matching_configs.append(config)
         
         return jsonify({
             'success': True,
-            'configs': matching_configs,
-            'count': len(matching_configs),
-            'target_day': target_day
+            'configs': configs,
+            'count': len(configs)
         }), 200
         
     except ClientError as e:
